@@ -1,0 +1,1530 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="cn_US">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+<link href="/css/main.css?v=6.4.1" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/ico.png?v=6.4.1">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/ico.png?v=6.4.1">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/ico.png?v=6.4.1">
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '6.4.1',
+    sidebar: {"position":"right","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+
+  <script>
+  (function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/0f81ff2f.js","daovoice")
+  daovoice('init', {
+      app_id: "7309f5ba"
+    });
+  daovoice('update');
+  </script>
+
+
+
+  <meta name="description" content="Red Hat  7.2  静默安装oracle 11g">
+<meta name="keywords" content="Oracle,Xmanager5下载">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Oracle_11g_Silence_install">
+<meta property="og:url" content="https://www.soliton.wang/2018/09/19/Oracle-11g-Silence-install/index.html">
+<meta property="og:site_name" content="soliton">
+<meta property="og:description" content="Red Hat  7.2  静默安装oracle 11g">
+<meta property="og:locale" content="cn_US">
+<meta property="og:updated_time" content="2018-10-17T09:08:10.404Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Oracle_11g_Silence_install">
+<meta name="twitter:description" content="Red Hat  7.2  静默安装oracle 11g">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="soliton" type="application/atom+xml" />
+
+
+
+
+  <link rel="canonical" href="https://www.soliton.wang/2018/09/19/Oracle-11g-Silence-install/"/>
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>Oracle_11g_Silence_install | soliton</title>
+  
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="cn_US">
+
+
+<link rel="stylesheet" href="/dist/APlayer.min.css">
+<div id="aplayer"></div>
+<script type="text/javascript" src="/dist/APlayer.min.js"></script>
+<script type="text/javascript" src="/dist/music.js"></script>
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-right page-post-detail">
+    <div class="headband"></div>
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">soliton</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <h1 class="site-subtitle" itemprop="description">I would like to use my life to spoil your life!</h1>
+      
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="Toggle navigation bar">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />Home</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+    <a href="/tags/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />Tags<span class="badge">21</span></a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+    <a href="/categories/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />Categories<span class="badge">14</span></a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+    <a href="/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />Archives<span class="badge">25</span></a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-sitemap">
+    <a href="/sitemap.xml" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br />Sitemap</a>
+  </li>
+
+      
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />Search</a>
+        </li>
+      
+    </ul>
+  
+
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="Searching..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://www.soliton.wang/2018/09/19/Oracle-11g-Silence-install/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="soliton">
+      <meta itemprop="description" content="I will use my life to replace you for ten years.">
+      <meta itemprop="image" content="/images/logo.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="soliton">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">Oracle_11g_Silence_install
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2018-09-19 09:59:00" itemprop="dateCreated datePublished" datetime="2018-09-19T09:59:00+08:00">2018-09-19</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-10-17 17:08:10" itemprop="dateModified" datetime="2018-10-17T17:08:10+08:00">2018-10-17</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Oracle/" itemprop="url" rel="index"><span itemprop="name">Oracle</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>Red Hat  7.2  静默安装oracle 11g<br><a id="more"></a><br>下载需要工具：<a href="https://soliton.net.cn/download/windwos/Xmanager5.zip" target="_blank" rel="noopener">Xmanager5</a><br>xmanager5序列号：101210-450789-147200</p>
+<p>系统环境<br><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">OS    :Red Hat Enterprise Linux<span class="built_in"> Server </span>release 7.2 (Maipo)</span><br><span class="line">Kernel:3.10.0-327.el7.x86_64</span><br></pre></td></tr></table></figure></p>
+<p>Oracle 安装包<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">linux<span class="selector-class">.x64_11gR2_database_1of2</span><span class="selector-class">.zip</span></span><br><span class="line">linux<span class="selector-class">.x64_11gR2_database_2of2</span><span class="selector-class">.zip</span></span><br></pre></td></tr></table></figure></p>
+<p>硬件需求<br><figure class="highlight lsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">物理内存：至少<span class="number">1</span>G</span><br><span class="line">虚拟内存：物理内存的<span class="number">2</span>倍&lt;swap&gt;</span><br><span class="line">硬盘空间：全部安装需要<span class="number">5.1</span>G</span><br><span class="line">显示器是配色：<span class="number">256</span>色</span><br><span class="line">处理器：主频最少<span class="number">550</span>MHZ</span><br></pre></td></tr></table></figure></p>
+<p>关闭防火墙和SELINUX<br><figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Selinux：</span></span><br><span class="line"><span class="keyword">setenforce </span><span class="number">0</span>  宽松模式</span><br><span class="line"><span class="symbol">sed</span> -i <span class="string">"s/enforcing/disabled/g"</span>  /etc/sysconfig/<span class="keyword">selinux </span>  永久关闭</span><br><span class="line"><span class="symbol">Firewalld</span>：</span><br><span class="line"><span class="symbol">systemctl</span> stop firewalld</span><br><span class="line"><span class="symbol">systemctl</span> disable firewalld</span><br></pre></td></tr></table></figure></p>
+<p>安装依赖包<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum -y install binutils compat-libstdc++-<span class="number">33</span> compat-libstdc++-<span class="number">33</span><span class="selector-class">.i686</span> elfutils-libelf elfutils-libelf-devel gcc gcc-c++ glibc glibc<span class="selector-class">.i686</span> glibc-common glibc-devel glibc-devel<span class="selector-class">.i686</span> glibc-headers ksh libaio libaio<span class="selector-class">.i686</span> libaio-devel libaio-devel<span class="selector-class">.i686libgcc</span> libgcc<span class="selector-class">.i686</span> libstdc++ libstdc++<span class="selector-class">.i686</span> libstdc++-devel make sysstat unixODBC unixODBC-devel</span><br></pre></td></tr></table></figure></p>
+<p>设定SWAP分区<br><figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">在<span class="regexp">/home/</span>下生成swap文件 设定大小<span class="number">2</span>GB</span><br><span class="line"></span><br><span class="line">dd <span class="keyword">if</span>=<span class="regexp">/dev/</span>zero of=<span class="regexp">/home/</span>swapfile bs=<span class="number">1</span>M <span class="keyword">count</span>=<span class="number">2048</span></span><br><span class="line"></span><br><span class="line">设定使用<span class="regexp">/home/</span>swapfile交换文件</span><br><span class="line"></span><br><span class="line">mkswap <span class="regexp">/home/</span>swapfile</span><br><span class="line"></span><br><span class="line">启用交换分区</span><br><span class="line"></span><br><span class="line">swapon <span class="regexp">/home/</span>swapfile</span><br><span class="line"></span><br><span class="line">编辑文件<span class="regexp">/ect/</span>fstab</span><br><span class="line">vi <span class="regexp">/etc/</span>fstab</span><br><span class="line"></span><br><span class="line">以便引导系统时启用交换文件，文件最下方插入</span><br><span class="line"></span><br><span class="line"><span class="regexp">/home/</span>swapfile swap swap defaults <span class="number">0</span> <span class="number">0</span></span><br></pre></td></tr></table></figure></p>
+<p>添加Oracle 用户<br><figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">创建oinstall、dba组 将<span class="keyword">oracle用户加入组 </span>修改并设定<span class="keyword">oracle用户密码</span></span><br><span class="line"><span class="keyword"></span></span><br><span class="line"><span class="keyword">groupadd </span>oinstall</span><br><span class="line">groupadd dba</span><br><span class="line">useradd -g oinstall -G dba <span class="keyword">oracle</span></span><br><span class="line"><span class="keyword">echo </span><span class="number">123456</span> <span class="title">| passwd --stdin oracle</span></span><br></pre></td></tr></table></figure></p>
+<p>修改内核参数<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">编辑文件/etc/sysctl<span class="selector-class">.conf</span>　　</span><br><span class="line"></span><br><span class="line">vi /etc/sysctl.conf</span><br><span class="line"></span><br><span class="line">配置文件内加入 修改以下参数。如果没有可以自己添加，如果默认值比参考值大，则不需要修改。</span><br><span class="line"></span><br><span class="line">fs<span class="selector-class">.aio-max-nr</span> = <span class="number">1048576</span></span><br><span class="line">fs<span class="selector-class">.file-max</span> = <span class="number">6815744</span></span><br><span class="line">kernel<span class="selector-class">.shmall</span> = <span class="number">2097152</span></span><br><span class="line">kernel<span class="selector-class">.shmmax</span> = <span class="number">536870912</span></span><br><span class="line">kernel<span class="selector-class">.shmmni</span> = <span class="number">4096</span></span><br><span class="line">kernel<span class="selector-class">.sem</span> = <span class="number">250</span> <span class="number">32000</span> <span class="number">100</span> <span class="number">128</span></span><br><span class="line">net<span class="selector-class">.ipv4</span><span class="selector-class">.ip_local_port_range</span> = <span class="number">9000</span> <span class="number">65500</span></span><br><span class="line">net<span class="selector-class">.core</span><span class="selector-class">.rmem_default</span> = <span class="number">262144</span></span><br><span class="line">net<span class="selector-class">.core</span><span class="selector-class">.rmem_max</span> = <span class="number">4194304</span></span><br><span class="line">net<span class="selector-class">.core</span><span class="selector-class">.wmem_default</span> = <span class="number">262144</span></span><br><span class="line">net<span class="selector-class">.core</span><span class="selector-class">.wmem_max</span> = <span class="number">1048586</span></span><br><span class="line"></span><br><span class="line">执行命令sysctl使其自检并生效</span><br><span class="line"></span><br><span class="line">sysctl -p</span><br></pre></td></tr></table></figure></p>
+<p>修改用户资源限制<br><figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">修改/etc/security/limits.conf配置文件</span><br><span class="line">vi /etc/security/limits.conf</span><br><span class="line"></span><br><span class="line">配置文件下方加入</span><br><span class="line"></span><br><span class="line">oracle              soft    nproc  <span class="number">2047</span></span><br><span class="line">oracle              hard    nproc  <span class="number">16384</span></span><br><span class="line">oracle              soft    nofile  <span class="number">1024</span></span><br><span class="line">oracle              hard    nofile  <span class="number">65536</span></span><br><span class="line">oracle              soft    stack   <span class="number">10240</span></span><br><span class="line"></span><br><span class="line">修改/etc/pam.d/login配置文件</span><br><span class="line">vi /etc/pam.d/login</span><br><span class="line"></span><br><span class="line">配置文件内加入</span><br><span class="line"></span><br><span class="line">session required /<span class="class"><span class="keyword">lib</span>/<span class="title">security</span>/<span class="title">pam_limits</span>.<span class="title">so</span></span></span><br><span class="line">session required pam_limits.so</span><br></pre></td></tr></table></figure></p>
+<p>创建安装目录<br><figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">创建安装目录  <span class="regexp">/usr/</span>local<span class="regexp">/oracle     /</span>usr<span class="regexp">/local/</span>oraInventory     <span class="regexp">/usr/</span>local/oradata  并赋予组用户及权限</span><br><span class="line"></span><br><span class="line">mkdir -p <span class="regexp">/usr/</span>local<span class="regexp">/oracle /</span>usr<span class="regexp">/local/</span>oraInventory <span class="regexp">/usr/</span>local<span class="regexp">/oradata/</span></span><br><span class="line">chown -R <span class="string">oracle:</span>oinstall <span class="regexp">/usr/</span>local<span class="regexp">/oracle /</span>usr<span class="regexp">/local/</span>oraInventory <span class="regexp">/usr/</span>local<span class="regexp">/oradata/</span></span><br><span class="line">chmod -R <span class="number">775</span> <span class="regexp">/usr/</span>local<span class="regexp">/oracle /</span>usr<span class="regexp">/local/</span>oraInventory <span class="regexp">/usr/</span>local<span class="regexp">/oradata/</span></span><br></pre></td></tr></table></figure></p>
+<p>创建oraInst.loc文件<br><figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">创建<span class="regexp">/etc/</span>oraInst.loc文件</span><br><span class="line"></span><br><span class="line">vi <span class="regexp">/etc/</span>oraInst.loc</span><br><span class="line"></span><br><span class="line">文件内加入以下内容</span><br><span class="line"></span><br><span class="line">inventory_loc=<span class="regexp">/usr/</span>local/oraInventory</span><br><span class="line">inst_group=oinstall</span><br><span class="line"></span><br><span class="line">保存退出后执行以下命令。设定该文件的用户组及权限。</span><br><span class="line"></span><br><span class="line">chown <span class="string">oracle:</span>oinstall <span class="regexp">/etc/</span>oraInst.loc</span><br><span class="line">chmod <span class="number">664</span> <span class="regexp">/etc/</span>oraInst.loc</span><br></pre></td></tr></table></figure></p>
+<p>上传oracle 11g的zip文件并解压<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">ls /data</span><br><span class="line">输出：linux<span class="selector-class">.x64_11gR2_database_1of2</span><span class="selector-class">.zip</span>  linux<span class="selector-class">.x64_11gR2_database_2of2</span><span class="selector-class">.zip</span></span><br><span class="line">解压：</span><br><span class="line">cd /data</span><br><span class="line">yum -y install unzip</span><br><span class="line">unzip linux<span class="selector-class">.x64_11gR2_database_1of2</span><span class="selector-class">.zip</span></span><br><span class="line">unzip linux<span class="selector-class">.x64_11gR2_database_2of2</span><span class="selector-class">.zip</span></span><br><span class="line">待解压完毕后会生成文件夹/data/database 修改其用户组及权限此处直接使用<span class="number">777</span></span><br><span class="line">chmod <span class="number">777</span> /data/database</span><br><span class="line">chown -R oracle<span class="selector-class">.oinstall</span> /data/database</span><br></pre></td></tr></table></figure></p>
+<p>准备oracle安装应答模板文件db_install.rsp文件</p>
+<p><ul>该文件默认存放在解压后的安装包内，也就是本例中/data/database/response下，将oracle静默安装所需应答文件全部拷贝至 /usr/local/oracle文件夹下<br><figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">将oracle静默安装所需应答文件全部拷贝至 <span class="regexp">/usr/</span>local/oracle文件夹下</span><br><span class="line"></span><br><span class="line">cp <span class="regexp">/data/</span>database<span class="regexp">/response/</span>* <span class="regexp">/usr/</span>local<span class="regexp">/oracle/</span></span><br><span class="line"></span><br><span class="line">修改安装所需的所有应答文件的所属组及权限</span><br><span class="line"></span><br><span class="line">chown  <span class="string">oracle:</span>oinstall <span class="regexp">/usr/</span>local<span class="regexp">/oracle/</span>*.rsp</span><br><span class="line">chmod <span class="number">755</span> <span class="regexp">/usr/</span>local<span class="regexp">/oracle/</span>*.rsp</span><br><span class="line"></span><br><span class="line">配置db_install.rsp文件</span><br><span class="line">vi <span class="regexp">/usr/</span>local<span class="regexp">/oracle/</span>db_install.rsp</span><br><span class="line"></span><br><span class="line">文件内修改相应的参数配置如下：</span><br><span class="line">oracle.install.option=INSTALL_DB_SWONLY     　　　　　　　　<span class="comment">//安装类型,只装数据库软件</span></span><br><span class="line">ORACLE_HOSTNAME=db             　　　　　　　　　　　　　　　 <span class="comment">//主机名称（命令hostname查询）</span></span><br><span class="line">UNIX_GROUP_NAME=oinstall       　　　　　　　　　　　　　　　 <span class="comment">// 安装组</span></span><br><span class="line">INVENTORY_LOCATION=<span class="regexp">/usr/</span>local<span class="regexp">/oraInventory  　　　　　　　　/</span>/INVENTORY目录（**不填就是默认值,本例此处需修改,因个人创建安装目录而定）</span><br><span class="line">SELECTED_LANGUAGES=en,zh_CN            　　　　　　　　 　　<span class="comment">// 选择语言</span></span><br><span class="line">ORACLE_HOME=<span class="regexp">/usr/</span>local<span class="regexp">/oracle/</span>product<span class="regexp">/11.2.0/</span>db_1  　　　　<span class="comment">// oracle_home *路径根据目录情况注意修改 本例安装路径/usr/local/oracle</span></span><br><span class="line">ORACLE_BASE=<span class="regexp">/usr/</span>local<span class="regexp">/oracle                       　　　 /</span>/ oracle_base *注意修改</span><br><span class="line">oracle.install.db.InstallEdition=EE          　　　　　　　 <span class="comment">// oracle版本</span></span><br><span class="line">oracle.install.db.isCustomInstall=<span class="literal">false</span>      　　　　　　　 <span class="comment">//自定义安装，否，使用默认组件</span></span><br><span class="line">oracle.install.db.DBA_GROUP=dba              　　　　　　　 <span class="comment">//dba用户组</span></span><br><span class="line">oracle.install.db.OPER_GROUP=oinstall        　　　　　　　 <span class="comment">//oper用户组</span></span><br><span class="line">oracle.install.db.config.starterdb.type=GENERAL_PURPOSE   <span class="comment">//数据库类型</span></span><br><span class="line">oracle.install.db.config.starterdb.globalDBName=orcl      <span class="comment">//globalDBName</span></span><br><span class="line">oracle.install.db.config.starterdb.SID=orcl  　　　　　　　 <span class="comment">//SID（**此处注意与环境变量内配置SID一致）</span></span><br><span class="line">oracle.install.db.config.starterdb.memoryLimit=<span class="number">81920</span>      <span class="comment">//自动管理内存的内存(M)</span></span><br><span class="line">oracle.install.db.config.starterdb.password.ALL=oracle    <span class="comment">//设定所有数据库用户使用同一个密码</span></span><br><span class="line">SECURITY_UPDATES_VIA_MYORACLESUPPORT=<span class="literal">false</span>       　　　　　 <span class="comment">//（手动写了false）</span></span><br><span class="line">DECLINE_SECURITY_UPDATES=<span class="literal">true</span>　　　　　　　　　　　　　　　　　<span class="comment">// **注意此参数 设定一定要为true</span></span><br></pre></td></tr></table></figure></ul></p>
+<p>设置oracle用户环境<br><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">由root切换至创建好的oracle用户</span><br><span class="line">su - oracle</span><br><span class="line"></span><br><span class="line">修改该用户的用户配置文件</span><br><span class="line">vi .bash_profile</span><br><span class="line"></span><br><span class="line">文件内加入并修改至以下内容</span><br><span class="line"></span><br><span class="line"><span class="builtin-name">export</span> <span class="attribute">ORACLE_BASE</span>=/usr/local/oracle</span><br><span class="line"><span class="builtin-name">export</span> <span class="attribute">ORACLE_HOME</span>=<span class="variable">$ORACLE_BASE</span>/product/11.2.0/db_1</span><br><span class="line"><span class="builtin-name">export</span> <span class="attribute">ORACLE_SID</span>=orcl</span><br><span class="line"><span class="builtin-name">export</span> <span class="attribute">ORACLE_OWNER</span>=oracle</span><br><span class="line"><span class="builtin-name">export</span> <span class="attribute">PATH</span>=<span class="variable">$PATH</span>:$ORACLE_HOME/bin:$HOME/bin</span><br><span class="line"></span><br><span class="line">保存退出后执行source命令立即生效。</span><br><span class="line">source .bash_profile</span><br></pre></td></tr></table></figure></p>
+<p>在oracle用户下开始安装<br><figure class="highlight haml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">执行命令。</span><br><span class="line"></span><br><span class="line"><span class="comment">/data/database/./runInstaller -silent -force -ignorePrereq -responseFile /usr/local/oracle/db_install.rsp</span></span><br><span class="line"></span><br><span class="line">参数说明</span><br><span class="line"><span class="comment">　　/data/database是安装包解压后的路径，此处根据安装包解压所在位置做修改，因人而异。</span></span><br><span class="line">　　runInstaller 是主要安装脚本</span><br><span class="line">　　-<span class="ruby">silent 静默模式</span></span><br><span class="line"><span class="ruby">　　-force 强制安装</span></span><br><span class="line"><span class="ruby">　　-ignorePrereq忽略warning直接安装。</span></span><br><span class="line"><span class="ruby">　　-responseFile读取安装应答文件。</span></span><br></pre></td></tr></table></figure></p>
+<p>xshell另起窗口并以root登陆<br><figure class="highlight sml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">watch -d -n <span class="number">2</span> <span class="symbol">'du</span> -sh /usr/<span class="keyword">local</span>/oracle'    监测oracle安装目录是否变化。或者直接tail -f命令监测安装log日志,不赘述。</span><br></pre></td></tr></table></figure></p>
+<p>等待安装编译直至出现以下内容，在新创建的root窗口内执行以下提示内的脚本，<br>既/usr/oracle/oraInventory/orainstRoot.sh  /usr/local/oracle/product/11.2.0/db_1/root.sh<br><figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">/usr/oracle/oraInventory/orainstRoot.<span class="keyword">sh</span>     <span class="comment">//我的没有出现这个所以没执行</span></span><br><span class="line">/usr/<span class="keyword">local</span>/oracle/product/11.2.0/db_1/root.<span class="keyword">sh</span></span><br><span class="line"></span><br><span class="line">　　To execute the configuration scripts:</span><br><span class="line"></span><br><span class="line">　　1. <span class="keyword">Open</span> a terminal <span class="keyword">window</span></span><br><span class="line"></span><br><span class="line">　　2. <span class="keyword">Log</span> <span class="keyword">in</span> <span class="keyword">as</span> <span class="string">"root"</span></span><br><span class="line"></span><br><span class="line">　　3. <span class="keyword">Run</span> the scripts</span><br><span class="line"></span><br><span class="line">　　4. <span class="keyword">Return</span> to this <span class="keyword">window</span> and hit<span class="string">"Enter"</span> key to <span class="keyword">continue</span></span><br><span class="line"></span><br><span class="line"> 　　Successfully Setup Software.</span><br><span class="line"></span><br><span class="line">#-------------------------------------------------------------------</span><br></pre></td></tr></table></figure></p>
+<p>sqlpuls登录<br><figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">sqlplus / <span class="keyword">as</span> sysdba</span><br><span class="line"></span><br><span class="line">SQL*Plus: Release <span class="number">11.2</span><span class="number">.0</span><span class="number">.1</span><span class="number">.0</span> Production <span class="keyword">on</span> <span class="title">Wed</span> <span class="title">Sep</span> <span class="title">19</span> <span class="title">11</span>:<span class="title">07</span>:<span class="title">23</span> <span class="title">2018</span></span><br><span class="line"></span><br><span class="line">Copyright (c) <span class="number">1982</span>, <span class="number">2009</span>, Oracle.  All rights reserved.</span><br><span class="line"></span><br><span class="line">Connected <span class="built_in">to</span> <span class="keyword">an</span> idle instance.</span><br><span class="line"></span><br><span class="line">SQL&gt;</span><br></pre></td></tr></table></figure></p>
+<p>授权用户<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">grant</span> <span class="keyword">connect</span>,<span class="keyword">resource</span>,dba <span class="keyword">to</span> username</span><br></pre></td></tr></table></figure></p>
+<p>创建用户并指定表空间<br><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">create<span class="built_in"> user </span>username identified by password</span><br><span class="line">default tablespace user_data</span><br><span class="line">temporary tablespace user_temp;</span><br></pre></td></tr></table></figure></p>
+<p>退出<br><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">exit</span></span><br></pre></td></tr></table></figure></p>
+<h3>Oracle 11g 静默安装教程结束…………</h3>
+
+
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+	<div><div>
+
+    <div style="text-align:center;color: #1f1d1d;font-size:24px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+
+</div>
+</div>
+    
+
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>Post author:  </strong>soliton</li>
+  <li class="post-copyright-link">
+    <strong>Post link: </strong>
+    <a href="https://www.soliton.wang/2018/09/19/Oracle-11g-Silence-install/" title="Oracle_11g_Silence_install">https://www.soliton.wang/2018/09/19/Oracle-11g-Silence-install/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> unless stating additionally.</li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Oracle/" rel="tag"><i class="fa fa-tag"></i> Oracle</a>
+          
+            <a href="/tags/Xmanager5下载/" rel="tag"><i class="fa fa-tag"></i> Xmanager5下载</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
+        
+
+        
+
+        
+          
+          <div class="social_share">
+            
+               <div>
+                 
+  <div class="bdsharebuttonbox">
+    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+    <a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
+    <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+    <a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a>
+    <a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+    <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+    <a href="#" class="bds_more" data-cmd="more"></a>
+    <a class="bds_count" data-cmd="count"></a>
+  </div>
+  <script>
+    window._bd_share_config = {
+      "common": {
+        "bdText": "",
+        "bdMini": "2",
+        "bdMiniList": false,
+        "bdPic": ""
+      },
+      "share": {
+        "bdSize": "16",
+        "bdStyle": "0"
+      },
+      "image": {
+        "viewList": ["tsina", "douban", "sqq", "qzone", "weixin", "twi", "fbook"],
+        "viewText": "分享到：",
+        "viewSize": "16"
+      }
+    }
+  </script>
+
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src ='/ static / api / js / share.js？v = 89860593.js？cdnversion ='+〜（ -  new Date（）/ 36e5）];
+
+</script>
+
+               </div>
+            
+            
+          </div>
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/09/18/Service_PHP-7-2-1_install/" rel="next" title="PHP-7.2.1_install">
+                <i class="fa fa-chevron-left"></i> PHP-7.2.1_install
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/09/19/Service_Mysql-5-7-20_install/" rel="prev" title="Mysql-5.7.20_install">
+                Mysql-5.7.20_install <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zOTE3MS8xNTY5OA=="></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/logo.jpg"
+                alt="soliton" />
+            
+              <p class="site-author-name" itemprop="name">soliton</p>
+              <p class="site-description motion-element" itemprop="description">I will use my life to replace you for ten years.</p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">25</span>
+                    <span class="site-state-item-name">posts</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">14</span>
+                    <span class="site-state-item-name">categories</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">21</span>
+                    <span class="site-state-item-name">tags</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  <a href="https://xq-soliton.github.io/" target="_blank" title="GitHub" rel="external nofollow"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="mailto:Linux_Wangxinqiu@163.com" target="_blank" title="E-Mail" rel="external nofollow"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="mailto:soliton.wang@gmail.com" target="_blank" title="Google" rel="external nofollow"><i class="fa fa-fw fa-google"></i>Google</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="http://sighttp.qq.com/msgrd?v=1&uin=1670829014" target="_blank" title="QQ" rel="external nofollow"><i class="fa fa-fw fa-qq"></i>QQ</a>
+                  
+                </span>
+              
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">Oracle 11g 静默安装教程结束…………</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">soliton</span>
+
+  
+
+  
+</div>
+
+
+  
+
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" rel="external nofollow" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">博客全站共19.2k字</span>
+</div>
+
+<div>
+<!-- 在网页底部添加网站运行时间 -->
+<span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+<script>
+    var now = new Date();
+    function createtime() {
+        var grt= new Date("09/21/2018 00:00:00");//此处修改你的建站时间或者网站上线时间
+        now.setTime(now.getTime()+250);
+        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}
+        document.getElementById("timeDate").innerHTML = "站点运行 "+dnum+" 天 ";
+        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分钟 " + snum + " 秒";
+    }
+setInterval("createtime()",250);
+</script>
+
+</div>
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+	
+    
+
+    
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.4.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.4.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=6.4.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=6.4.1"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.4.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.4.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.4.1"></script>
+
+
+
+  
+
+
+
+  
+    <script type="text/javascript">
+      window.livereOptions = {
+        refer: '2018/09/19/Oracle-11g-Silence-install/'
+      };
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <style>
+    .copy-btn {
+      display: inline-block;
+      padding: 6px 12px;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 20px;
+      color: #333;
+      white-space: nowrap;
+      vertical-align: middle;
+      cursor: pointer;
+      background-color: #eee;
+      background-image: linear-gradient(#fcfcfc, #eee);
+      border: 1px solid #d5d5d5;
+      border-radius: 3px;
+      user-select: none;
+      outline: 0;
+    }
+
+    .highlight-wrap .copy-btn {
+      transition: opacity .3s ease-in-out;
+      opacity: 0;
+      padding: 2px 6px;
+      position: absolute;
+      right: 4px;
+      top: 8px;
+    }
+
+    .highlight-wrap:hover .copy-btn,
+    .highlight-wrap .copy-btn:focus {
+      opacity: 1
+    }
+
+    .highlight-wrap {
+      position: relative;
+    }
+  </style>
+  <script>
+    $('.highlight').each(function (i, e) {
+      var $wrap = $('<div>').addClass('highlight-wrap')
+      $(e).after($wrap)
+      $wrap.append($('<button>').addClass('copy-btn').append('Copy').on('click', function (e) {
+        var code = $(this).parent().find('.code').find('.line').map(function (i, e) {
+          return $(e).text()
+        }).toArray().join('\n')
+        var ta = document.createElement('textarea')
+        document.body.appendChild(ta)
+        ta.style.position = 'absolute'
+        ta.style.top = '0px'
+        ta.style.left = '0px'
+        ta.value = code
+        ta.select()
+        ta.focus()
+        var result = document.execCommand('copy')
+        document.body.removeChild(ta)
+        
+          if(result)$(this).text('Copied')
+          else $(this).text('Copy failed')
+        
+        $(this).blur()
+      })).on('mouseleave', function (e) {
+        var $b = $(this).find('.copy-btn')
+        setTimeout(function () {
+          $b.text('Copy')
+        }, 300)
+      }).append(e)
+    })
+  </script>
+
+
+<!-- 页面点击小红心 --> 
+<script type="text/javascript" src="/js/src/love.js"></script>
+
+<script type="text/javascript" color="0,0,255" opacity='1.2' zIndex="-2" count="99" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+
+
+
+</body>
+</html>
