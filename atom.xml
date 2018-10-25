@@ -432,4 +432,104 @@
     
   </entry>
   
+  <entry>
+    <title>PHP_install_Parameter dependence</title>
+    <link href="https://www.soliton.wang/2018/09/04/PHP-install-Parameter-dependence/"/>
+    <id>https://www.soliton.wang/2018/09/04/PHP-install-Parameter-dependence/</id>
+    <published>2018-09-04T07:40:00.000Z</published>
+    <updated>2018-10-08T06:47:40.149Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;PHP编译参数是需要安装的依赖。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="PHP" scheme="https://www.soliton.wang/categories/PHP/"/>
+    
+    
+      <category term="Service_PHP" scheme="https://www.soliton.wang/tags/Service-PHP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PHP-5.6.37_install</title>
+    <link href="https://www.soliton.wang/2018/09/04/Service_PHP-5-6-37_install/"/>
+    <id>https://www.soliton.wang/2018/09/04/Service_PHP-5-6-37_install/</id>
+    <published>2018-09-04T06:43:00.000Z</published>
+    <updated>2018-10-08T07:46:29.770Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;PHP编译安装,方便扩展，优点较多。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="PHP" scheme="https://www.soliton.wang/categories/PHP/"/>
+    
+    
+      <category term="Service_PHP" scheme="https://www.soliton.wang/tags/Service-PHP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PHP-install_Parameter description</title>
+    <link href="https://www.soliton.wang/2018/09/04/PHP-install-Parameter-description/"/>
+    <id>https://www.soliton.wang/2018/09/04/PHP-install-Parameter-description/</id>
+    <published>2018-09-04T06:43:00.000Z</published>
+    <updated>2018-10-08T06:47:40.199Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;PHP 编译安装参数说明&lt;br&gt;
+    
+    </summary>
+    
+      <category term="PHP" scheme="https://www.soliton.wang/categories/PHP/"/>
+    
+    
+      <category term="Service_PHP" scheme="https://www.soliton.wang/tags/Service-PHP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Service_Nginx_1.12.2_install</title>
+    <link href="https://www.soliton.wang/2018/09/03/Service-Nginx-1-12-2-install/"/>
+    <id>https://www.soliton.wang/2018/09/03/Service-Nginx-1-12-2-install/</id>
+    <published>2018-09-03T10:21:22.000Z</published>
+    <updated>2018-10-19T06:53:15.450Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Nginx 1.12.2编译安装&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Nginx" scheme="https://www.soliton.wang/categories/Nginx/"/>
+    
+    
+      <category term="-Service_Nginx" scheme="https://www.soliton.wang/tags/Service-Nginx/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Nginx.conf</title>
+    <link href="https://www.soliton.wang/2018/09/01/Nginx-conf/"/>
+    <id>https://www.soliton.wang/2018/09/01/Nginx-conf/</id>
+    <published>2018-09-01T09:08:00.000Z</published>
+    <updated>2018-10-08T06:47:39.849Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;nginx主配置文件&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Nginx" scheme="https://www.soliton.wang/categories/Nginx/"/>
+    
+    
+      <category term="Service_Nginx" scheme="https://www.soliton.wang/tags/Service-Nginx/"/>
+    
+  </entry>
+  
 </feed>
