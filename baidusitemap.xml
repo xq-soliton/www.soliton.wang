@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://www.soliton.wang/2018/10/29/Python2-7-Update-3-7/</loc>
+    <lastmod>2018-10-29T10:18:45.387Z</lastmod>
+  </url>  <url>
     <loc>https://www.soliton.wang/2018/09/20/remotely-install-system/</loc>
-    <lastmod>2018-10-25T09:52:19.197Z</lastmod>
+    <lastmod>2018-10-25T09:53:43.780Z</lastmod>
   </url>  <url>
     <loc>https://www.soliton.wang/2018/09/03/Service-Nginx-1-12-2-install/</loc>
     <lastmod>2018-10-19T06:53:15.450Z</lastmod>
