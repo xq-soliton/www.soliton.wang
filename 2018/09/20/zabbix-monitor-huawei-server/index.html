@@ -14,13 +14,22 @@
   
 
 
-<html class="theme-next gemini use-motion" lang="cn_US">
+<html class="theme-next gemini use-motion" lang="en">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
 <meta name="theme-color" content="#222">
-
+<script>
+    (function(){
+        if(''){
+            if (prompt('请输入文章密码') !== ''){
+                alert('密码错误！');
+                history.back();
+            }
+        }
+    })();
+</script>
 
 
 
@@ -127,7 +136,7 @@
 <meta property="og:url" content="https://www.soliton.wang/2018/09/20/zabbix-monitor-huawei-server/index.html">
 <meta property="og:site_name" content="soliton">
 <meta property="og:description" content="zabbix监控华为服务器的硬件是通过iBMC，iBMC系统默认支持V3版本的SNMP服务，SNMP V1和SNMP V2C由于自身机制存在安全隐患，默认是不开启的。如果使用SNMP V1和SNMP V2C需要配置团体名，而用V3只需知道用户名密码及加密算法即可。">
-<meta property="og:locale" content="cn_US">
+<meta property="og:locale" content="en">
 <meta property="og:image" content="https://soliton.net.cn/soliton.images/zabbixhwmb1.png">
 <meta property="og:image" content="https://soliton.net.cn/soliton.images/zabbixhwmb2.png">
 <meta property="og:image" content="https://soliton.net.cn/soliton.images/zabbixhwmb3.png">
@@ -195,7 +204,7 @@
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="cn_US">
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
 
 
 <link rel="stylesheet" href="/dist/APlayer.min.css">
@@ -291,6 +300,14 @@
           <li class="menu-item menu-item-book">
     <a href="/book/" rel="section">
       <i class="menu-item-icon fa fa-fw fa-book"></i> <br />book</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-photo">
+    <a href="/Photo" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-photo"></i> <br />Photo</a>
   </li>
 
       

@@ -14,13 +14,22 @@
   
 
 
-<html class="theme-next gemini use-motion" lang="cn_US">
+<html class="theme-next gemini use-motion" lang="en">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
 <meta name="theme-color" content="#222">
-
+<script>
+    (function(){
+        if(''){
+            if (prompt('请输入文章密码') !== ''){
+                alert('密码错误！');
+                history.back();
+            }
+        }
+    })();
+</script>
 
 
 
@@ -127,7 +136,7 @@
 <meta property="og:url" content="https://www.soliton.wang/2018/10/17/centos-install-vsftpd/index.html">
 <meta property="og:site_name" content="soliton">
 <meta property="og:description" content="Liunx外部文件的传输，避免不了使用FTP服务，所以现在就整理下，CentOS7环境下，FTP服务的搭建。FTP服务器需要安装vsftp服务端软件。我们知道，在建立vsftpd用户时，我们一般是在linux下建立用户useradd的方式来访问ftp，但有时我们只想提供ftp服务，而避免用户用ftp的帐号去登录linux，采用一般的方式只能是限制该用户的访问权限，但还是避免不了用户登录进linux">
-<meta property="og:locale" content="cn_US">
+<meta property="og:locale" content="en">
 <meta property="og:updated_time" content="2018-10-17T09:11:50.361Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Centos_install_Vsftpd">
@@ -190,7 +199,7 @@
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="cn_US">
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
 
 
 <link rel="stylesheet" href="/dist/APlayer.min.css">
@@ -286,6 +295,14 @@
           <li class="menu-item menu-item-book">
     <a href="/book/" rel="section">
       <i class="menu-item-icon fa fa-fw fa-book"></i> <br />book</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-photo">
+    <a href="/Photo" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-photo"></i> <br />Photo</a>
   </li>
 
       
