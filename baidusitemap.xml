@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://www.soliton.wang/2018/10/08/docker-command/</loc>
+    <lastmod>2018-11-06T08:33:08.668Z</lastmod>
+  </url>  <url>
     <loc>https://www.soliton.wang/2018/10/29/Python2-7-Update-3-7/</loc>
     <lastmod>2018-10-29T10:18:45.387Z</lastmod>
   </url>  <url>
@@ -48,9 +51,6 @@
   </url>  <url>
     <loc>https://www.soliton.wang/2018/10/09/Centos-add-a-hard-disk/</loc>
     <lastmod>2018-10-17T08:55:08.516Z</lastmod>
-  </url>  <url>
-    <loc>https://www.soliton.wang/2018/10/08/docker-command/</loc>
-    <lastmod>2018-10-17T02:17:00.968Z</lastmod>
   </url>  <url>
     <loc>https://www.soliton.wang/2018/09/04/Service_PHP-5-6-37_install/</loc>
     <lastmod>2018-10-08T07:46:29.770Z</lastmod>
