@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://www.soliton.wang/2018/09/19/Service_Mysql-5-7-20_install/</loc>
+    <lastmod>2018-11-08T02:56:19.335Z</lastmod>
+  </url>  <url>
     <loc>https://www.soliton.wang/2018/10/08/docker-command/</loc>
     <lastmod>2018-11-06T08:33:08.668Z</lastmod>
   </url>  <url>
@@ -21,9 +24,6 @@
   </url>  <url>
     <loc>https://www.soliton.wang/2018/09/21/zabbix-agentd-install/</loc>
     <lastmod>2018-10-17T09:09:06.386Z</lastmod>
-  </url>  <url>
-    <loc>https://www.soliton.wang/2018/09/19/Service_Mysql-5-7-20_install/</loc>
-    <lastmod>2018-10-17T09:08:53.413Z</lastmod>
   </url>  <url>
     <loc>https://www.soliton.wang/2018/09/19/Oracle-11g-Silence-install/</loc>
     <lastmod>2018-10-17T09:08:10.404Z</lastmod>
