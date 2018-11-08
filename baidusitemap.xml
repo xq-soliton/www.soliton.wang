@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.soliton.wang/2018/09/19/Service_Mysql-5-7-20_install/</loc>
-    <lastmod>2018-11-08T02:56:19.335Z</lastmod>
+    <loc>https://www.soliton.wang/docker/index.html</loc>
+    <lastmod>2018-11-08T09:20:35.631Z</lastmod>
   </url>  <url>
     <loc>https://www.soliton.wang/2018/10/08/docker-command/</loc>
-    <lastmod>2018-11-06T08:33:08.668Z</lastmod>
+    <lastmod>2018-11-08T08:57:39.118Z</lastmod>
+  </url>  <url>
+    <loc>https://www.soliton.wang/2018/09/19/Service_Mysql-5-7-20_install/</loc>
+    <lastmod>2018-11-08T02:56:19.335Z</lastmod>
   </url>  <url>
     <loc>https://www.soliton.wang/2018/10/29/Python2-7-Update-3-7/</loc>
     <lastmod>2018-10-29T10:18:45.387Z</lastmod>
