@@ -1993,7 +1993,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffafac;
+  background: #451dff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3094,7 +3094,7 @@ ul.breadcrumb li+li:last-child {
   padding: 40px;
   margin: initial;
   margin-top: 12px;
-  background: rgba(224,224,224,0);
+  background: #fff;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12), 0 -1px 0.5px 0 rgba(0,0,0,0.09);
   border-radius: initial;
 }
