@@ -137,7 +137,7 @@
 <meta property="og:site_name" content="soliton">
 <meta property="og:description" content="搭建zabbix客户端，是zabbix服务端能够监控到客户端的资源">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-10-17T09:09:06.386Z">
+<meta property="og:updated_time" content="2018-11-14T09:11:21.537Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="zabbix_agentd_install">
 <meta name="twitter:description" content="搭建zabbix客户端，是zabbix服务端能够监控到客户端的资源">
@@ -451,7 +451,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-10-17 17:09:06" itemprop="dateModified" datetime="2018-10-17T17:09:06+08:00">2018-10-17</time>
+                <time title="修改时间：2018-11-14 17:11:21" itemprop="dateModified" datetime="2018-11-14T17:11:21+08:00">2018-11-14</time>
               
             
           </span>
@@ -505,7 +505,7 @@
         <p>搭建zabbix客户端，是zabbix服务端能够监控到客户端的资源</p>
 <a id="more"></a>
 <p>系统环境<br><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">OS    :Red Hat Enterprise Linux<span class="built_in"> Server </span>release 7.2 (Maipo)</span><br><span class="line">Kernel:3.10.0-327.el7.x86_64</span><br></pre></td></tr></table></figure></p>
-<p>关闭防火墙和SELINUX<br><figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Selinux：</span></span><br><span class="line"><span class="keyword">setenforce </span><span class="number">0</span>  宽松模式</span><br><span class="line"><span class="symbol">sed</span> -i <span class="string">"s/enforcing/disabled/g"</span>  /etc/sysconfig/<span class="keyword">selinux </span>  永久关闭</span><br><span class="line"><span class="symbol">Firewalld</span>：</span><br><span class="line"><span class="symbol">systemctl</span> stop firewalld</span><br><span class="line"><span class="symbol">systemctl</span> disable firewalld</span><br></pre></td></tr></table></figure></p>
+<p>关闭防火墙和SELINUX<br><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Selinux：</span><br><span class="line">setenforce 0  宽松模式</span><br><span class="line">sed -i <span class="string">"s/enforcing/disabled/g"</span>  /etc/selinux<span class="built_in">/config </span>  永久关闭</span><br><span class="line">Firewalld：</span><br><span class="line">systemctl stop firewalld</span><br><span class="line">systemctl <span class="builtin-name">disable</span> firewalld</span><br></pre></td></tr></table></figure></p>
 <p>下载<br><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget https:<span class="regexp">//</span>soliton.net.cn<span class="regexp">/download/</span>linux<span class="regexp">/zabbix-3.4.8.tar.gz</span></span><br></pre></td></tr></table></figure></p>
 <p>创建zabbix用户和组<br><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">groupadd zabbix</span><br><span class="line">useradd zabbix -s <span class="regexp">/sbin/</span>nologin -M -g zabbix</span><br></pre></td></tr></table></figure></p>
 <p>解压<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">tar</span> <span class="selector-tag">-xf</span> <span class="selector-tag">zabbix-3</span><span class="selector-class">.4</span><span class="selector-class">.8</span><span class="selector-class">.tar</span><span class="selector-class">.gz</span></span><br><span class="line"><span class="selector-tag">cd</span> <span class="selector-tag">zabbix-3</span><span class="selector-class">.4</span><span class="selector-class">.8</span></span><br></pre></td></tr></table></figure></p>

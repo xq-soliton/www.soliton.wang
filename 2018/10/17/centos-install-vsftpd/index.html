@@ -137,7 +137,7 @@
 <meta property="og:site_name" content="soliton">
 <meta property="og:description" content="Liunx外部文件的传输，避免不了使用FTP服务，所以现在就整理下，CentOS7环境下，FTP服务的搭建。FTP服务器需要安装vsftp服务端软件。我们知道，在建立vsftpd用户时，我们一般是在linux下建立用户useradd的方式来访问ftp，但有时我们只想提供ftp服务，而避免用户用ftp的帐号去登录linux，采用一般的方式只能是限制该用户的访问权限，但还是避免不了用户登录进linux">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-10-17T09:11:50.361Z">
+<meta property="og:updated_time" content="2018-11-14T09:11:21.532Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Centos_install_Vsftpd">
 <meta name="twitter:description" content="Liunx外部文件的传输，避免不了使用FTP服务，所以现在就整理下，CentOS7环境下，FTP服务的搭建。FTP服务器需要安装vsftp服务端软件。我们知道，在建立vsftpd用户时，我们一般是在linux下建立用户useradd的方式来访问ftp，但有时我们只想提供ftp服务，而避免用户用ftp的帐号去登录linux，采用一般的方式只能是限制该用户的访问权限，但还是避免不了用户登录进linux">
@@ -434,12 +434,24 @@
                 
               
 
-              <time title="创建时间：2018-10-17 16:35:39 / 修改时间：17:11:50" itemprop="dateCreated datePublished" datetime="2018-10-17T16:35:39+08:00">2018-10-17</time>
+              <time title="创建时间：2018-10-17 16:35:39" itemprop="dateCreated datePublished" datetime="2018-10-17T16:35:39+08:00">2018-10-17</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-11-14 17:11:21" itemprop="dateModified" datetime="2018-11-14T17:11:21+08:00">2018-11-14</time>
               
             
           </span>
@@ -492,7 +504,7 @@
       
         <p>Liunx外部文件的传输，避免不了使用FTP服务，所以现在就整理下，CentOS7环境下，FTP服务的搭建。FTP服务器需要安装vsftp服务端软件。我们知道，在建立vsftpd用户时，我们一般是在linux下建立用户useradd的方式来访问ftp，但有时我们只想提供ftp服务，而避免用户用ftp的帐号去登录linux，采用一般的方式只能是限制该用户的访问权限，但还是避免不了用户登录进linux系统，所以比较好的方法是用vsftpd的虚拟用户（virtual users）。<br><a id="more"></a></p>
 <p></p><h3>系统环境<br><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">OS    :Red Hat Enterprise Linux<span class="built_in"> Server </span>release 7.2 (Maipo)</span><br><span class="line">Kernel:3.10.0-327.el7.x86_64</span><br></pre></td></tr></table></figure><p></p>
-<p></p><h3>关闭防火墙和SELINUX<br><figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Selinux：</span></span><br><span class="line"><span class="keyword">setenforce </span><span class="number">0</span>  宽松模式</span><br><span class="line"><span class="symbol">sed</span> -i <span class="string">"s/enforcing/disabled/g"</span>  /etc/sysconfig/<span class="keyword">selinux </span>  永久关闭</span><br><span class="line"><span class="symbol">Firewalld</span>：</span><br><span class="line"><span class="symbol">systemctl</span> stop firewalld</span><br><span class="line"><span class="symbol">systemctl</span> disable firewalld</span><br></pre></td></tr></table></figure><p></p>
+<p></p><h3>关闭防火墙和SELINUX<br><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Selinux：</span><br><span class="line">setenforce 0  宽松模式</span><br><span class="line">sed -i <span class="string">"s/enforcing/disabled/g"</span>  /etc/selinux<span class="built_in">/config </span>  永久关闭</span><br><span class="line">Firewalld：</span><br><span class="line">systemctl stop firewalld</span><br><span class="line">systemctl <span class="builtin-name">disable</span> firewalld</span><br></pre></td></tr></table></figure><p></p>
 <p></p><h3>安装vsftpd<br><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">rpm -qa | grep vsftpd 			<span class="comment">#查询vsftpd是否安装</span></span><br><span class="line"></span><br><span class="line">yum <span class="keyword">install</span> -y vsftpd 	<span class="comment">#安装vsftpd</span></span><br><span class="line"></span><br><span class="line">yum <span class="keyword">install</span> -y psmisc net-tools systemd-devel libdb-devel perl-DBI  <span class="comment">#安装vsftpd虚拟用户配置依赖包</span></span><br><span class="line"></span><br><span class="line">systemctl start vsftpd.service <span class="comment">#启动</span></span><br><span class="line"></span><br><span class="line">systemctl enable vsftpd.service <span class="comment">#设置vsftpd开机启动</span></span><br></pre></td></tr></table></figure><p></p>
 <p></p><h3>新建系统用户vsftpd<br><figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">useradd vsftpd -d <span class="regexp">/home/</span>wwwroot -s <span class="regexp">/bin/</span><span class="keyword">false</span> #用户目录为<span class="regexp">/home/</span>wwwroot, 用户登录终端设为<span class="regexp">/bin/</span><span class="keyword">false</span>(即使之不能登录系统)</span><br><span class="line"></span><br><span class="line">chown vsftpd:vsftpd <span class="regexp">/home/</span>wwwroot -R</span><br></pre></td></tr></table></figure><p></p>
 <p></p><h3>建立虚拟用户个人Vsftp的配置文件和子账号FTP权限<br><figure class="highlight makefile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">mkdir /etc/vsftpd/vconf</span><br><span class="line"></span><br><span class="line">cd /etc/vsftpd/vconf</span><br><span class="line"></span><br><span class="line">touch web1  <span class="comment">#这里创建虚拟用户配置文件</span></span><br><span class="line"></span><br><span class="line">mkdir -p /home/wwwroot/web1/http/mydic</span><br><span class="line"></span><br><span class="line">设置FTP上传文件新增权限，最新的vsftpd要求对主目录不能有写的权限所以ftp为755，主目录下面的子目录再设置777权限  </span><br><span class="line"></span><br><span class="line">chmod -R 755 /home/wwwroot/web1/http</span><br><span class="line">chmod R 777 /home/wwwroot/web1/http/mydic</span><br><span class="line"></span><br><span class="line">vi web1 				<span class="comment">#编辑用户web1配置文件，其他的跟这个配置文件类似，输入下面内容</span></span><br><span class="line"></span><br><span class="line">local_root=/home/wwwroot/web1/http/　　<span class="comment">#设置FTP账号根目录</span></span><br><span class="line">write_enable=YES</span><br><span class="line">anon_world_readable_only=NO</span><br><span class="line">anon_upload_enable=YES</span><br><span class="line">anon_mkdir_write_enable=YES</span><br><span class="line">anon_other_write_enable=YES</span><br></pre></td></tr></table></figure><p></p>
@@ -821,7 +833,7 @@
 
             
               <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">系统环境12OS    :Red Hat Enterprise Linux Server release 7.2 (Maipo)Kernel:3.10.0-327.el7.x86_64
-关闭防火墙和SELINUX123456Selinux：setenforce 0  宽松模式sed -i &quot;s/enforcing/disabled/g&quot;  /etc/sysconfig/selinux   永久关闭Firewalld：systemctl stop firewalldsystemctl disable firewalld
+关闭防火墙和SELINUX123456Selinux：setenforce 0  宽松模式sed -i &quot;s/enforcing/disabled/g&quot;  /etc/selinux/config   永久关闭Firewalld：systemctl stop firewalldsystemctl disable firewalld
 安装vsftpd123456789rpm -qa | grep vsftpd 			#查询vsftpd是否安装yum install -y vsftpd 	#安装vsftpdyum install -y psmisc net-tools systemd-devel libdb-devel perl-DBI  #安装vsftpd虚拟用户配置依赖包systemctl start vsftpd.service #启动systemctl enable vsftpd.service #设置vsftpd开机启动
 新建系统用户vsftpd123useradd vsftpd -d /home/wwwroot -s /bin/false #用户目录为/home/wwwroot, 用户登录终端设为/bin/false(即使之不能登录系统)chown vsftpd:vsftpd /home/wwwroot -R
 建立虚拟用户个人Vsftp的配置文件和子账号FTP权限123456789101112131415161718192021mkdir /etc/vsftpd/vconfcd /etc/vsftpd/vconftouch web1  #这里创建虚拟用户配置文件mkdir -p /home/wwwroot/web1/http/mydic设置FTP上传文件新增权限，最新的vsftpd要求对主目录不能有写的权限所以ftp为755，主目录下面的子目录再设置777权限  chmod -R 755 /home/wwwroot/web1/httpchmod R 777 /home/wwwroot/web1/http/mydicvi web1 				#编辑用户web1配置文件，其他的跟这个配置文件类似，输入下面内容local_root=/home/wwwroot/web1/http/　　#设置FTP账号根目录write_enable=YESanon_world_readable_only=NOanon_upload_enable=YESanon_mkdir_write_enable=YESanon_other_write_enable=YES
@@ -834,7 +846,7 @@
 如果系统为32位，上面改为lib，否则配置失败
 重启vsftpd服务用创建的虚拟用户登录12345systemctl restart vsftpdftp localhostusername: ceshipassword: 123456
 可通过  tail -f /var/log/secure 指令，查看服务器安全日志，便于分析错误问题，设置操作效果一定要仔细.....
-</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">关闭防火墙和SELINUX123456Selinux：setenforce 0  宽松模式sed -i &quot;s/enforcing/disabled/g&quot;  /etc/sysconfig/selinux   永久关闭Firewalld：systemctl stop firewalldsystemctl disable firewalld
+</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">关闭防火墙和SELINUX123456Selinux：setenforce 0  宽松模式sed -i &quot;s/enforcing/disabled/g&quot;  /etc/selinux/config   永久关闭Firewalld：systemctl stop firewalldsystemctl disable firewalld
 安装vsftpd123456789rpm -qa | grep vsftpd 			#查询vsftpd是否安装yum install -y vsftpd 	#安装vsftpdyum install -y psmisc net-tools systemd-devel libdb-devel perl-DBI  #安装vsftpd虚拟用户配置依赖包systemctl start vsftpd.service #启动systemctl enable vsftpd.service #设置vsftpd开机启动
 新建系统用户vsftpd123useradd vsftpd -d /home/wwwroot -s /bin/false #用户目录为/home/wwwroot, 用户登录终端设为/bin/false(即使之不能登录系统)chown vsftpd:vsftpd /home/wwwroot -R
 建立虚拟用户个人Vsftp的配置文件和子账号FTP权限123456789101112131415161718192021mkdir /etc/vsftpd/vconfcd /etc/vsftpd/vconftouch web1  #这里创建虚拟用户配置文件mkdir -p /home/wwwroot/web1/http/mydic设置FTP上传文件新增权限，最新的vsftpd要求对主目录不能有写的权限所以ftp为755，主目录下面的子目录再设置777权限  chmod -R 755 /home/wwwroot/web1/httpchmod R 777 /home/wwwroot/web1/http/mydicvi web1 				#编辑用户web1配置文件，其他的跟这个配置文件类似，输入下面内容local_root=/home/wwwroot/web1/http/　　#设置FTP账号根目录write_enable=YESanon_world_readable_only=NOanon_upload_enable=YESanon_mkdir_write_enable=YESanon_other_write_enable=YES

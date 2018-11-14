@@ -137,7 +137,7 @@
 <meta property="og:site_name" content="soliton">
 <meta property="og:description" content="利用Zabbix 监控服务利用Percona 插件监控Mysql 数据库">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-10-17T08:57:18.668Z">
+<meta property="og:updated_time" content="2018-11-14T09:11:21.538Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="zabbix_monitor_Mysql">
 <meta name="twitter:description" content="利用Zabbix 监控服务利用Percona 插件监控Mysql 数据库">
@@ -451,7 +451,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-10-17 16:57:18" itemprop="dateModified" datetime="2018-10-17T16:57:18+08:00">2018-10-17</time>
+                <time title="修改时间：2018-11-14 17:11:21" itemprop="dateModified" datetime="2018-11-14T17:11:21+08:00">2018-11-14</time>
               
             
           </span>
@@ -505,7 +505,7 @@
         <p>利用Zabbix 监控服务利用Percona 插件监控Mysql 数据库</p>
 <a id="more"></a>
 <p>系统环境<br><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">OS    :Red Hat Enterprise Linux<span class="built_in"> Server </span>release 7.2 (Maipo)</span><br><span class="line">Kernel:3.10.0-327.el7.x86_64</span><br></pre></td></tr></table></figure></p>
-<p>关闭防火墙和SELINUX<br><figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Selinux：</span></span><br><span class="line"><span class="keyword">setenforce </span><span class="number">0</span>  宽松模式</span><br><span class="line"><span class="symbol">sed</span> -i <span class="string">"s/enforcing/disabled/g"</span>  /etc/sysconfig/<span class="keyword">selinux </span>  永久关闭</span><br><span class="line"><span class="symbol">Firewalld</span>：</span><br><span class="line"><span class="symbol">systemctl</span> stop firewalld</span><br><span class="line"><span class="symbol">systemctl</span> disable firewalld</span><br></pre></td></tr></table></figure></p>
+<p>关闭防火墙和SELINUX<br><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Selinux：</span><br><span class="line">setenforce 0  宽松模式</span><br><span class="line">sed -i <span class="string">"s/enforcing/disabled/g"</span>  /etc/selinux<span class="built_in">/config </span>  永久关闭</span><br><span class="line">Firewalld：</span><br><span class="line">systemctl stop firewalld</span><br><span class="line">systemctl <span class="builtin-name">disable</span> firewalld</span><br></pre></td></tr></table></figure></p>
 <p>Zabbix 利用Percona插件监控MySQL</p>
 <p><li>被监控部署路径是:/usr/local/Zabbix</li></p>
 <p><li>被监控主机Mysql路径：/usr/local/mysql<br>确保被监控主机没有安装percona 相关软件，有则卸载<br><figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rpm -<span class="keyword">qa</span> | <span class="keyword">grep</span> percona</span><br></pre></td></tr></table></figure></li></p>

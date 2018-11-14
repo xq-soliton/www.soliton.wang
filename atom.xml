@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.soliton.wang/"/>
-  <updated>2018-11-13T08:06:14.321Z</updated>
+  <updated>2018-11-14T09:11:21.534Z</updated>
   <id>https://www.soliton.wang/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://www.soliton.wang/2018/11/13/rsync-inotify/"/>
     <id>https://www.soliton.wang/2018/11/13/rsync-inotify/</id>
     <published>2018-11-13T07:04:39.000Z</published>
-    <updated>2018-11-13T08:06:14.321Z</updated>
+    <updated>2018-11-14T09:11:21.534Z</updated>
     
     <summary type="html">
     
@@ -41,7 +41,7 @@
     <link href="https://www.soliton.wang/2018/10/29/Python2-7-Update-3-7/"/>
     <id>https://www.soliton.wang/2018/10/29/Python2-7-Update-3-7/</id>
     <published>2018-10-29T08:20:21.000Z</published>
-    <updated>2018-10-29T10:18:45.387Z</updated>
+    <updated>2018-11-14T09:11:21.534Z</updated>
     
     <summary type="html">
     
@@ -61,7 +61,7 @@
     <link href="https://www.soliton.wang/2018/10/17/centos-install-vsftpd/"/>
     <id>https://www.soliton.wang/2018/10/17/centos-install-vsftpd/</id>
     <published>2018-10-17T08:35:39.000Z</published>
-    <updated>2018-10-17T09:11:50.361Z</updated>
+    <updated>2018-11-14T09:11:21.532Z</updated>
     
     <summary type="html">
     
@@ -81,7 +81,7 @@
     <link href="https://www.soliton.wang/2018/10/16/Centos-install-Shadowsocks/"/>
     <id>https://www.soliton.wang/2018/10/16/Centos-install-Shadowsocks/</id>
     <published>2018-10-15T16:00:00.000Z</published>
-    <updated>2018-10-17T08:56:09.934Z</updated>
+    <updated>2018-11-14T09:11:21.531Z</updated>
     
     <summary type="html">
     
@@ -103,7 +103,7 @@
     <link href="https://www.soliton.wang/2018/10/09/Centos-add-a-hard-disk/"/>
     <id>https://www.soliton.wang/2018/10/09/Centos-add-a-hard-disk/</id>
     <published>2018-10-09T06:08:00.000Z</published>
-    <updated>2018-10-17T08:55:08.516Z</updated>
+    <updated>2018-11-14T09:11:21.528Z</updated>
     
     <summary type="html">
     
@@ -123,7 +123,7 @@
     <link href="https://www.soliton.wang/2018/10/09/sphinx-coreseek/"/>
     <id>https://www.soliton.wang/2018/10/09/sphinx-coreseek/</id>
     <published>2018-10-09T03:35:00.000Z</published>
-    <updated>2018-10-17T09:00:45.848Z</updated>
+    <updated>2018-11-14T09:11:21.537Z</updated>
     
     <summary type="html">
     
@@ -145,7 +145,7 @@
     <link href="https://www.soliton.wang/2018/10/08/docker-command/"/>
     <id>https://www.soliton.wang/2018/10/08/docker-command/</id>
     <published>2018-10-08T02:49:08.000Z</published>
-    <updated>2018-11-08T08:57:39.118Z</updated>
+    <updated>2018-11-14T09:11:21.532Z</updated>
     
     <summary type="html">
     
@@ -165,7 +165,7 @@
     <link href="https://www.soliton.wang/2018/09/21/zabbix-monitor-Mysql/"/>
     <id>https://www.soliton.wang/2018/09/21/zabbix-monitor-Mysql/</id>
     <published>2018-09-21T03:10:00.000Z</published>
-    <updated>2018-10-17T08:57:18.668Z</updated>
+    <updated>2018-11-14T09:11:21.538Z</updated>
     
     <summary type="html">
     
@@ -187,7 +187,7 @@
     <link href="https://www.soliton.wang/2018/09/21/zabbix-wechat-Give-an-alarm/"/>
     <id>https://www.soliton.wang/2018/09/21/zabbix-wechat-Give-an-alarm/</id>
     <published>2018-09-21T01:01:00.000Z</published>
-    <updated>2018-10-08T06:47:42.190Z</updated>
+    <updated>2018-11-14T09:11:21.538Z</updated>
     
     <summary type="html">
     
@@ -209,7 +209,7 @@
     <link href="https://www.soliton.wang/2018/09/21/zabbix-agentd-install/"/>
     <id>https://www.soliton.wang/2018/09/21/zabbix-agentd-install/</id>
     <published>2018-09-21T00:42:00.000Z</published>
-    <updated>2018-10-17T09:09:06.386Z</updated>
+    <updated>2018-11-14T09:11:21.537Z</updated>
     
     <summary type="html">
     
@@ -229,7 +229,7 @@
     <link href="https://www.soliton.wang/2018/09/21/zabbix-monitor-Oracle/"/>
     <id>https://www.soliton.wang/2018/09/21/zabbix-monitor-Oracle/</id>
     <published>2018-09-21T00:35:00.000Z</published>
-    <updated>2018-10-17T08:58:25.637Z</updated>
+    <updated>2018-11-14T09:11:21.538Z</updated>
     
     <summary type="html">
     
@@ -251,7 +251,7 @@
     <link href="https://www.soliton.wang/2018/09/20/Oracle-11g-install-Graphing/"/>
     <id>https://www.soliton.wang/2018/09/20/Oracle-11g-install-Graphing/</id>
     <published>2018-09-20T10:39:00.000Z</published>
-    <updated>2018-10-08T07:18:48.424Z</updated>
+    <updated>2018-11-14T09:11:21.533Z</updated>
     
     <summary type="html">
     
@@ -273,7 +273,7 @@
     <link href="https://www.soliton.wang/2018/09/20/zabbix-monitor-huawei-server/"/>
     <id>https://www.soliton.wang/2018/09/20/zabbix-monitor-huawei-server/</id>
     <published>2018-09-20T08:18:00.000Z</published>
-    <updated>2018-10-17T08:55:52.073Z</updated>
+    <updated>2018-11-14T09:11:21.537Z</updated>
     
     <summary type="html">
     
@@ -293,7 +293,7 @@
     <link href="https://www.soliton.wang/2018/09/20/remotely-install-system/"/>
     <id>https://www.soliton.wang/2018/09/20/remotely-install-system/</id>
     <published>2018-09-20T07:41:24.000Z</published>
-    <updated>2018-10-25T09:53:43.780Z</updated>
+    <updated>2018-11-14T09:11:21.534Z</updated>
     
     <summary type="html">
     
@@ -313,7 +313,7 @@
     <link href="https://www.soliton.wang/2018/09/20/zabbix-monitor-agentd/"/>
     <id>https://www.soliton.wang/2018/09/20/zabbix-monitor-agentd/</id>
     <published>2018-09-20T02:16:00.000Z</published>
-    <updated>2018-10-17T09:09:18.898Z</updated>
+    <updated>2018-11-14T09:11:21.537Z</updated>
     
     <summary type="html">
     
@@ -333,7 +333,7 @@
     <link href="https://www.soliton.wang/2018/09/20/Service-ZABBIX-3-4-8-install/"/>
     <id>https://www.soliton.wang/2018/09/20/Service-ZABBIX-3-4-8-install/</id>
     <published>2018-09-20T01:16:00.000Z</published>
-    <updated>2018-10-17T08:58:53.050Z</updated>
+    <updated>2018-11-14T09:11:21.536Z</updated>
     
     <summary type="html">
     
@@ -353,7 +353,7 @@
     <link href="https://www.soliton.wang/2018/09/19/Service_Mysql-5-7-20_install/"/>
     <id>https://www.soliton.wang/2018/09/19/Service_Mysql-5-7-20_install/</id>
     <published>2018-09-19T01:59:00.000Z</published>
-    <updated>2018-11-08T02:56:19.335Z</updated>
+    <updated>2018-11-14T09:11:21.535Z</updated>
     
     <summary type="html">
     
@@ -373,7 +373,7 @@
     <link href="https://www.soliton.wang/2018/09/19/Oracle-11g-Silence-install/"/>
     <id>https://www.soliton.wang/2018/09/19/Oracle-11g-Silence-install/</id>
     <published>2018-09-19T01:59:00.000Z</published>
-    <updated>2018-10-17T09:08:10.404Z</updated>
+    <updated>2018-11-14T09:11:21.533Z</updated>
     
     <summary type="html">
     
@@ -395,7 +395,7 @@
     <link href="https://www.soliton.wang/2018/09/18/Service_PHP-7-2-1_install/"/>
     <id>https://www.soliton.wang/2018/09/18/Service_PHP-7-2-1_install/</id>
     <published>2018-09-18T01:32:00.000Z</published>
-    <updated>2018-10-08T06:47:41.301Z</updated>
+    <updated>2018-11-14T09:11:21.536Z</updated>
     
     <summary type="html">
     
@@ -415,7 +415,7 @@
     <link href="https://www.soliton.wang/2018/09/17/PXE-install-system/"/>
     <id>https://www.soliton.wang/2018/09/17/PXE-install-system/</id>
     <published>2018-09-17T01:32:00.000Z</published>
-    <updated>2018-10-17T08:58:11.459Z</updated>
+    <updated>2018-11-14T09:11:21.534Z</updated>
     
     <summary type="html">
     
@@ -435,7 +435,7 @@
     <link href="https://www.soliton.wang/2018/09/11/Selenium-Chrome-Chromedriver/"/>
     <id>https://www.soliton.wang/2018/09/11/Selenium-Chrome-Chromedriver/</id>
     <published>2018-09-11T01:49:19.000Z</published>
-    <updated>2018-10-08T06:47:40.476Z</updated>
+    <updated>2018-11-14T09:11:21.534Z</updated>
     
     <summary type="html">
     
@@ -457,7 +457,7 @@
     <link href="https://www.soliton.wang/2018/09/04/Service_Mysql-5-6-25_install/"/>
     <id>https://www.soliton.wang/2018/09/04/Service_Mysql-5-6-25_install/</id>
     <published>2018-09-04T10:04:00.000Z</published>
-    <updated>2018-10-08T06:47:40.950Z</updated>
+    <updated>2018-11-14T09:11:21.535Z</updated>
     
     <summary type="html">
     
@@ -477,7 +477,7 @@
     <link href="https://www.soliton.wang/2018/09/04/PHP-install-Parameter-dependence/"/>
     <id>https://www.soliton.wang/2018/09/04/PHP-install-Parameter-dependence/</id>
     <published>2018-09-04T07:40:00.000Z</published>
-    <updated>2018-10-08T06:47:40.149Z</updated>
+    <updated>2018-11-14T09:11:21.533Z</updated>
     
     <summary type="html">
     
@@ -497,7 +497,7 @@
     <link href="https://www.soliton.wang/2018/09/04/PHP-install-Parameter-description/"/>
     <id>https://www.soliton.wang/2018/09/04/PHP-install-Parameter-description/</id>
     <published>2018-09-04T06:43:00.000Z</published>
-    <updated>2018-10-08T06:47:40.199Z</updated>
+    <updated>2018-11-14T09:11:21.533Z</updated>
     
     <summary type="html">
     
@@ -517,7 +517,7 @@
     <link href="https://www.soliton.wang/2018/09/04/Service_PHP-5-6-37_install/"/>
     <id>https://www.soliton.wang/2018/09/04/Service_PHP-5-6-37_install/</id>
     <published>2018-09-04T06:43:00.000Z</published>
-    <updated>2018-10-08T07:46:29.770Z</updated>
+    <updated>2018-11-14T09:11:21.535Z</updated>
     
     <summary type="html">
     
@@ -537,7 +537,7 @@
     <link href="https://www.soliton.wang/2018/09/03/Service-Nginx-1-12-2-install/"/>
     <id>https://www.soliton.wang/2018/09/03/Service-Nginx-1-12-2-install/</id>
     <published>2018-09-03T10:21:22.000Z</published>
-    <updated>2018-10-19T06:53:15.450Z</updated>
+    <updated>2018-11-14T09:11:21.535Z</updated>
     
     <summary type="html">
     
@@ -557,7 +557,7 @@
     <link href="https://www.soliton.wang/2018/09/01/Nginx-conf/"/>
     <id>https://www.soliton.wang/2018/09/01/Nginx-conf/</id>
     <published>2018-09-01T09:08:00.000Z</published>
-    <updated>2018-10-08T06:47:39.849Z</updated>
+    <updated>2018-11-14T09:11:21.532Z</updated>
     
     <summary type="html">
     

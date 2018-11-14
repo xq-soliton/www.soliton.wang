@@ -150,7 +150,7 @@
 <meta property="og:image" content="https://soliton.net.cn/soliton.images/zabbixwy9.png">
 <meta property="og:image" content="https://soliton.net.cn/soliton.images/zabbixwy10.png">
 <meta property="og:image" content="https://soliton.net.cn/soliton.images/zabbixwy11.png">
-<meta property="og:updated_time" content="2018-10-17T08:58:53.050Z">
+<meta property="og:updated_time" content="2018-11-14T09:11:21.536Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Service_ZABBIX_3.4.8_install">
 <meta name="twitter:description" content="利用ZABBIX监控服务监控系统服务的状态，硬件状态等多种监控方式…………">
@@ -465,7 +465,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-10-17 16:58:53" itemprop="dateModified" datetime="2018-10-17T16:58:53+08:00">2018-10-17</time>
+                <time title="修改时间：2018-11-14 17:11:21" itemprop="dateModified" datetime="2018-11-14T17:11:21+08:00">2018-11-14</time>
               
             
           </span>
@@ -519,7 +519,7 @@
         <p>利用ZABBIX监控服务监控系统服务的状态，硬件状态等多种监控方式…………</p>
 <a id="more"></a>
 <p>系统环境<br><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">OS    :Red Hat Enterprise Linux<span class="built_in"> Server </span>release 7.2 (Maipo)</span><br><span class="line">Kernel:3.10.0-327.el7.x86_64</span><br></pre></td></tr></table></figure></p>
-<p>关闭防火墙和SELINUX<br><figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Selinux：</span></span><br><span class="line"><span class="keyword">setenforce </span><span class="number">0</span>  宽松模式</span><br><span class="line"><span class="symbol">sed</span> -i <span class="string">"s/enforcing/disabled/g"</span>  /etc/sysconfig/<span class="keyword">selinux </span>  永久关闭</span><br><span class="line"><span class="symbol">Firewalld</span>：</span><br><span class="line"><span class="symbol">systemctl</span> stop firewalld</span><br><span class="line"><span class="symbol">systemctl</span> disable firewalld</span><br></pre></td></tr></table></figure></p>
+<p>关闭防火墙和SELINUX<br><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Selinux：</span><br><span class="line">setenforce 0  宽松模式</span><br><span class="line">sed -i <span class="string">"s/enforcing/disabled/g"</span>  /etc/selinux<span class="built_in">/config </span>  永久关闭</span><br><span class="line">Firewalld：</span><br><span class="line">systemctl stop firewalld</span><br><span class="line">systemctl <span class="builtin-name">disable</span> firewalld</span><br></pre></td></tr></table></figure></p>
 <p>软件环境</p>
 <p><li>nginx/1.12.2：<a href="https://www.soliton.wang/2018/09/03/Service-Nginx-1-12-2-install/#more">nginx 1.12.2编译安装</a></li></p>
 <p><li>Mysql/5.7.20：<a href="https://www.soliton.wang/2018/09/19/mysql-5-7-20-install/#more">Mysql 5.7.20编译</a></li></p>

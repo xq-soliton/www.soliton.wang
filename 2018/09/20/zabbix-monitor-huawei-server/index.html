@@ -141,7 +141,7 @@
 <meta property="og:image" content="https://soliton.net.cn/soliton.images/zabbixhwmb2.png">
 <meta property="og:image" content="https://soliton.net.cn/soliton.images/zabbixhwmb3.png">
 <meta property="og:image" content="https://soliton.net.cn/soliton.images/zabbixhwmb4.png">
-<meta property="og:updated_time" content="2018-10-17T08:55:52.073Z">
+<meta property="og:updated_time" content="2018-11-14T09:11:21.537Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="zabbix_monitor_huawei server">
 <meta name="twitter:description" content="zabbix监控华为服务器的硬件是通过iBMC，iBMC系统默认支持V3版本的SNMP服务，SNMP V1和SNMP V2C由于自身机制存在安全隐患，默认是不开启的。如果使用SNMP V1和SNMP V2C需要配置团体名，而用V3只需知道用户名密码及加密算法即可。">
@@ -456,7 +456,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-10-17 16:55:52" itemprop="dateModified" datetime="2018-10-17T16:55:52+08:00">2018-10-17</time>
+                <time title="修改时间：2018-11-14 17:11:21" itemprop="dateModified" datetime="2018-11-14T17:11:21+08:00">2018-11-14</time>
               
             
           </span>
@@ -508,7 +508,7 @@
 
       
         <p>zabbix监控华为服务器的硬件是通过iBMC，iBMC系统默认支持V3版本的SNMP服务，SNMP V1和SNMP V2C由于自身机制存在安全隐患，<br>默认是不开启的。如果使用SNMP V1和SNMP V2C需要配置团体名，而用V3只需知道用户名密码及加密算法即可。<br><a id="more"></a><br>系统环境<br><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">OS    :Red Hat Enterprise Linux<span class="built_in"> Server </span>release 7.2 (Maipo)</span><br><span class="line">Kernel:3.10.0-327.el7.x86_64</span><br></pre></td></tr></table></figure></p>
-<p>关闭防火墙和SELINUX<br><figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Selinux：</span></span><br><span class="line"><span class="keyword">setenforce </span><span class="number">0</span>  宽松模式</span><br><span class="line"><span class="symbol">sed</span> -i <span class="string">"s/enforcing/disabled/g"</span>  /etc/sysconfig/<span class="keyword">selinux </span>  永久关闭</span><br><span class="line"><span class="symbol">Firewalld</span>：</span><br><span class="line"><span class="symbol">systemctl</span> stop firewalld</span><br><span class="line"><span class="symbol">systemctl</span> disable firewalld</span><br></pre></td></tr></table></figure></p>
+<p>关闭防火墙和SELINUX<br><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Selinux：</span><br><span class="line">setenforce 0  宽松模式</span><br><span class="line">sed -i <span class="string">"s/enforcing/disabled/g"</span>  /etc/selinux<span class="built_in">/config </span>  永久关闭</span><br><span class="line">Firewalld：</span><br><span class="line">systemctl stop firewalld</span><br><span class="line">systemctl <span class="builtin-name">disable</span> firewalld</span><br></pre></td></tr></table></figure></p>
 <p>我们可以现在zabbix server上安装snmpwalk，然后进行如下测试：<br><figure class="highlight lsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">snmpwalk -v <span class="number">3</span> -u root -a sha -A 'Huawei12#$' -x AES -X 'Huawei12#$'  -l authPriv  <span class="number">172.16</span><span class="number">.1</span><span class="number">.34</span> system</span><br><span class="line"></span><br><span class="line">上面一条执行不行的话执行下一条</span><br><span class="line"></span><br><span class="line">snmpwalk -v <span class="number">3</span> -c root <span class="number">172.16</span><span class="number">.1</span><span class="number">.34</span> system</span><br></pre></td></tr></table></figure></p>
 <p>返回值：<br><figure class="highlight x86asm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">SNMPv2-<span class="keyword">SMI</span>::enterprises<span class="meta">.2011</span><span class="meta">.2</span><span class="meta">.235</span><span class="meta">.1</span><span class="meta">.1</span><span class="meta">.1</span><span class="meta">.1</span><span class="meta">.0</span> = INTEGER: <span class="number">1</span></span><br><span class="line">…………</span><br></pre></td></tr></table></figure></p>
 <p>PS：snmpwalk会遍历OID下面的所有的值，所以会很多，我这里只是测试下可以连上服务器并能获取到值</p>
