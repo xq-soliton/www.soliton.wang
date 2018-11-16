@@ -4,7 +4,7 @@
   <url>
     <loc>https://www.soliton.wang/book/index.html</loc>
     
-    <lastmod>2018-11-16T06:47:37.826Z</lastmod>
+    <lastmod>2018-11-16T06:49:38.074Z</lastmod>
     
   </url>
   
@@ -58,13 +58,6 @@
   </url>
   
   <url>
-    <loc>https://www.soliton.wang/2018/09/20/Service-ZABBIX-3-4-8-install/</loc>
-    
-    <lastmod>2018-11-14T09:11:21.536Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://www.soliton.wang/2018/09/18/Service_PHP-7-2-1_install/</loc>
     
     <lastmod>2018-11-14T09:11:21.536Z</lastmod>
@@ -72,14 +65,14 @@
   </url>
   
   <url>
-    <loc>https://www.soliton.wang/2018/09/03/Service-Nginx-1-12-2-install/</loc>
+    <loc>https://www.soliton.wang/2018/09/20/Service-ZABBIX-3-4-8-install/</loc>
     
-    <lastmod>2018-11-14T09:11:21.535Z</lastmod>
+    <lastmod>2018-11-14T09:11:21.536Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://www.soliton.wang/2018/09/19/Service_Mysql-5-7-20_install/</loc>
+    <loc>https://www.soliton.wang/2018/09/03/Service-Nginx-1-12-2-install/</loc>
     
     <lastmod>2018-11-14T09:11:21.535Z</lastmod>
     
@@ -100,7 +93,14 @@
   </url>
   
   <url>
-    <loc>https://www.soliton.wang/2018/09/17/PXE-install-system/</loc>
+    <loc>https://www.soliton.wang/2018/09/19/Service_Mysql-5-7-20_install/</loc>
+    
+    <lastmod>2018-11-14T09:11:21.535Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.soliton.wang/2018/10/29/Python2-7-Update-3-7/</loc>
     
     <lastmod>2018-11-14T09:11:21.534Z</lastmod>
     
@@ -108,13 +108,6 @@
   
   <url>
     <loc>https://www.soliton.wang/2018/09/20/remotely-install-system/</loc>
-    
-    <lastmod>2018-11-14T09:11:21.534Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.soliton.wang/2018/10/29/Python2-7-Update-3-7/</loc>
     
     <lastmod>2018-11-14T09:11:21.534Z</lastmod>
     
@@ -135,9 +128,9 @@
   </url>
   
   <url>
-    <loc>https://www.soliton.wang/2018/09/04/PHP-install-Parameter-description/</loc>
+    <loc>https://www.soliton.wang/2018/09/17/PXE-install-system/</loc>
     
-    <lastmod>2018-11-14T09:11:21.533Z</lastmod>
+    <lastmod>2018-11-14T09:11:21.534Z</lastmod>
     
   </url>
   
@@ -149,7 +142,7 @@
   </url>
   
   <url>
-    <loc>https://www.soliton.wang/2018/09/19/Oracle-11g-Silence-install/</loc>
+    <loc>https://www.soliton.wang/2018/09/04/PHP-install-Parameter-description/</loc>
     
     <lastmod>2018-11-14T09:11:21.533Z</lastmod>
     
@@ -157,6 +150,13 @@
   
   <url>
     <loc>https://www.soliton.wang/2018/09/04/PHP-install-Parameter-dependence/</loc>
+    
+    <lastmod>2018-11-14T09:11:21.533Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.soliton.wang/2018/09/19/Oracle-11g-Silence-install/</loc>
     
     <lastmod>2018-11-14T09:11:21.533Z</lastmod>
     
