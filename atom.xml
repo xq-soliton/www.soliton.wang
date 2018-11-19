@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.soliton.wang/"/>
-  <updated>2018-11-14T09:11:21.534Z</updated>
+  <updated>2018-11-19T03:26:47.546Z</updated>
   <id>https://www.soliton.wang/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Centos7_Install_Mongodb</title>
+    <link href="https://www.soliton.wang/2018/11/19/Centos7-Install-Mongodb/"/>
+    <id>https://www.soliton.wang/2018/11/19/Centos7-Install-Mongodb/</id>
+    <published>2018-11-19T03:07:23.000Z</published>
+    <updated>2018-11-19T03:26:47.546Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;MongoDB是用C++语言编写的非关系型数据库。特点是高性能、易部署、易使用，存储数据十分方便，主要特性有：&lt;br&gt;面向集合存储，易于存储对象类型的数据&lt;br&gt;模式自由&lt;br&gt;支持动态查询&lt;br&gt;支持完全索引，包含内部对象&lt;br&gt;支持复制和故障恢复&lt;br&gt;使用高效的二进制数据存储，包括大型对象&lt;br&gt;文件存储格式为BSON(一种JSON的扩展)&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Database" scheme="https://www.soliton.wang/categories/Database/"/>
+    
+    
+      <category term="Mongodb" scheme="https://www.soliton.wang/tags/Mongodb/"/>
+    
+  </entry>
   
   <entry>
     <title>rsync+inotify</title>
@@ -493,15 +513,15 @@
   </entry>
   
   <entry>
-    <title>PHP-install_Parameter description</title>
-    <link href="https://www.soliton.wang/2018/09/04/PHP-install-Parameter-description/"/>
-    <id>https://www.soliton.wang/2018/09/04/PHP-install-Parameter-description/</id>
+    <title>PHP-5.6.37_install</title>
+    <link href="https://www.soliton.wang/2018/09/04/Service_PHP-5-6-37_install/"/>
+    <id>https://www.soliton.wang/2018/09/04/Service_PHP-5-6-37_install/</id>
     <published>2018-09-04T06:43:00.000Z</published>
-    <updated>2018-11-14T09:11:21.533Z</updated>
+    <updated>2018-11-14T09:11:21.535Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;PHP 编译安装参数说明&lt;br&gt;
+      &lt;p&gt;PHP编译安装,方便扩展，优点较多。&lt;/p&gt;
     
     </summary>
     
@@ -513,15 +533,15 @@
   </entry>
   
   <entry>
-    <title>PHP-5.6.37_install</title>
-    <link href="https://www.soliton.wang/2018/09/04/Service_PHP-5-6-37_install/"/>
-    <id>https://www.soliton.wang/2018/09/04/Service_PHP-5-6-37_install/</id>
+    <title>PHP-install_Parameter description</title>
+    <link href="https://www.soliton.wang/2018/09/04/PHP-install-Parameter-description/"/>
+    <id>https://www.soliton.wang/2018/09/04/PHP-install-Parameter-description/</id>
     <published>2018-09-04T06:43:00.000Z</published>
-    <updated>2018-11-14T09:11:21.535Z</updated>
+    <updated>2018-11-14T09:11:21.533Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;PHP编译安装,方便扩展，优点较多。&lt;/p&gt;
+      &lt;p&gt;PHP 编译安装参数说明&lt;br&gt;
     
     </summary>
     
