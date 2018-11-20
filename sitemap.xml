@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.soliton.wang/2018/10/29/Python2-7-Update-3-7/</loc>
+    
+    <lastmod>2018-11-20T02:09:07.304Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.soliton.wang/2018/11/19/Centos7-Install-Mongodb/</loc>
     
     <lastmod>2018-11-19T03:26:47.546Z</lastmod>
@@ -16,13 +23,6 @@
   </url>
   
   <url>
-    <loc>https://www.soliton.wang/2018/09/21/zabbix-monitor-Oracle/</loc>
-    
-    <lastmod>2018-11-14T09:11:21.538Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://www.soliton.wang/2018/09/21/zabbix-monitor-Mysql/</loc>
     
     <lastmod>2018-11-14T09:11:21.538Z</lastmod>
@@ -31,6 +31,13 @@
   
   <url>
     <loc>https://www.soliton.wang/2018/09/21/zabbix-wechat-Give-an-alarm/</loc>
+    
+    <lastmod>2018-11-14T09:11:21.538Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.soliton.wang/2018/09/21/zabbix-monitor-Oracle/</loc>
     
     <lastmod>2018-11-14T09:11:21.538Z</lastmod>
     
@@ -79,6 +86,13 @@
   </url>
   
   <url>
+    <loc>https://www.soliton.wang/2018/09/04/Service_Mysql-5-6-25_install/</loc>
+    
+    <lastmod>2018-11-14T09:11:21.535Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.soliton.wang/2018/09/03/Service-Nginx-1-12-2-install/</loc>
     
     <lastmod>2018-11-14T09:11:21.535Z</lastmod>
@@ -100,21 +114,7 @@
   </url>
   
   <url>
-    <loc>https://www.soliton.wang/2018/09/04/Service_Mysql-5-6-25_install/</loc>
-    
-    <lastmod>2018-11-14T09:11:21.535Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.soliton.wang/2018/10/29/Python2-7-Update-3-7/</loc>
-    
-    <lastmod>2018-11-14T09:11:21.534Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.soliton.wang/2018/09/20/remotely-install-system/</loc>
+    <loc>https://www.soliton.wang/2018/09/11/Selenium-Chrome-Chromedriver/</loc>
     
     <lastmod>2018-11-14T09:11:21.534Z</lastmod>
     
@@ -135,7 +135,7 @@
   </url>
   
   <url>
-    <loc>https://www.soliton.wang/2018/09/11/Selenium-Chrome-Chromedriver/</loc>
+    <loc>https://www.soliton.wang/2018/09/20/remotely-install-system/</loc>
     
     <lastmod>2018-11-14T09:11:21.534Z</lastmod>
     
@@ -156,14 +156,14 @@
   </url>
   
   <url>
-    <loc>https://www.soliton.wang/2018/09/20/Oracle-11g-install-Graphing/</loc>
+    <loc>https://www.soliton.wang/2018/09/19/Oracle-11g-Silence-install/</loc>
     
     <lastmod>2018-11-14T09:11:21.533Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://www.soliton.wang/2018/09/19/Oracle-11g-Silence-install/</loc>
+    <loc>https://www.soliton.wang/2018/09/20/Oracle-11g-install-Graphing/</loc>
     
     <lastmod>2018-11-14T09:11:21.533Z</lastmod>
     
