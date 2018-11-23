@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.soliton.wang/book/index.html</loc>
+    
+    <lastmod>2018-11-23T03:58:02.194Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.soliton.wang/2018/10/29/Python2-7-Update-3-7/</loc>
     
     <lastmod>2018-11-20T02:09:07.304Z</lastmod>
@@ -12,20 +19,6 @@
     <loc>https://www.soliton.wang/2018/11/19/Centos7-Install-Mongodb/</loc>
     
     <lastmod>2018-11-19T03:26:47.546Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.soliton.wang/book/index.html</loc>
-    
-    <lastmod>2018-11-16T06:53:47.104Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.soliton.wang/2018/09/21/zabbix-monitor-Mysql/</loc>
-    
-    <lastmod>2018-11-14T09:11:21.538Z</lastmod>
     
   </url>
   
@@ -44,14 +37,21 @@
   </url>
   
   <url>
-    <loc>https://www.soliton.wang/2018/09/20/zabbix-monitor-huawei-server/</loc>
+    <loc>https://www.soliton.wang/2018/09/21/zabbix-monitor-Mysql/</loc>
+    
+    <lastmod>2018-11-14T09:11:21.538Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.soliton.wang/2018/10/09/sphinx-coreseek/</loc>
     
     <lastmod>2018-11-14T09:11:21.537Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://www.soliton.wang/2018/10/09/sphinx-coreseek/</loc>
+    <loc>https://www.soliton.wang/2018/09/20/zabbix-monitor-huawei-server/</loc>
     
     <lastmod>2018-11-14T09:11:21.537Z</lastmod>
     
@@ -86,13 +86,6 @@
   </url>
   
   <url>
-    <loc>https://www.soliton.wang/2018/09/04/Service_Mysql-5-6-25_install/</loc>
-    
-    <lastmod>2018-11-14T09:11:21.535Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://www.soliton.wang/2018/09/03/Service-Nginx-1-12-2-install/</loc>
     
     <lastmod>2018-11-14T09:11:21.535Z</lastmod>
@@ -100,14 +93,21 @@
   </url>
   
   <url>
-    <loc>https://www.soliton.wang/2018/09/19/Service_Mysql-5-7-20_install/</loc>
+    <loc>https://www.soliton.wang/2018/09/04/Service_PHP-5-6-37_install/</loc>
     
     <lastmod>2018-11-14T09:11:21.535Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://www.soliton.wang/2018/09/04/Service_PHP-5-6-37_install/</loc>
+    <loc>https://www.soliton.wang/2018/09/04/Service_Mysql-5-6-25_install/</loc>
+    
+    <lastmod>2018-11-14T09:11:21.535Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.soliton.wang/2018/09/19/Service_Mysql-5-7-20_install/</loc>
     
     <lastmod>2018-11-14T09:11:21.535Z</lastmod>
     
@@ -128,14 +128,14 @@
   </url>
   
   <url>
-    <loc>https://www.soliton.wang/2018/11/13/rsync-inotify/</loc>
+    <loc>https://www.soliton.wang/2018/09/20/remotely-install-system/</loc>
     
     <lastmod>2018-11-14T09:11:21.534Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://www.soliton.wang/2018/09/20/remotely-install-system/</loc>
+    <loc>https://www.soliton.wang/2018/11/13/rsync-inotify/</loc>
     
     <lastmod>2018-11-14T09:11:21.534Z</lastmod>
     
@@ -170,6 +170,13 @@
   </url>
   
   <url>
+    <loc>https://www.soliton.wang/2018/10/08/docker-command/</loc>
+    
+    <lastmod>2018-11-14T09:11:21.532Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.soliton.wang/2018/09/01/Nginx-conf/</loc>
     
     <lastmod>2018-11-14T09:11:21.532Z</lastmod>
@@ -178,13 +185,6 @@
   
   <url>
     <loc>https://www.soliton.wang/2018/10/17/centos-install-vsftpd/</loc>
-    
-    <lastmod>2018-11-14T09:11:21.532Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.soliton.wang/2018/10/08/docker-command/</loc>
     
     <lastmod>2018-11-14T09:11:21.532Z</lastmod>
     
