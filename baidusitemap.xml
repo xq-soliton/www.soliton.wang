@@ -16,10 +16,10 @@
     <loc>https://www.soliton.wang/2018/09/21/zabbix-monitor-Mysql/</loc>
     <lastmod>2018-11-14T09:11:21.538Z</lastmod>
   </url>  <url>
-    <loc>https://www.soliton.wang/2018/10/09/sphinx-coreseek/</loc>
+    <loc>https://www.soliton.wang/2018/09/20/zabbix-monitor-huawei-server/</loc>
     <lastmod>2018-11-14T09:11:21.537Z</lastmod>
   </url>  <url>
-    <loc>https://www.soliton.wang/2018/09/20/zabbix-monitor-huawei-server/</loc>
+    <loc>https://www.soliton.wang/2018/10/09/sphinx-coreseek/</loc>
     <lastmod>2018-11-14T09:11:21.537Z</lastmod>
   </url>  <url>
     <loc>https://www.soliton.wang/2018/09/20/zabbix-monitor-agentd/</loc>
@@ -28,13 +28,13 @@
     <loc>https://www.soliton.wang/2018/09/21/zabbix-agentd-install/</loc>
     <lastmod>2018-11-14T09:11:21.537Z</lastmod>
   </url>  <url>
-    <loc>https://www.soliton.wang/2018/09/20/Service-ZABBIX-3-4-8-install/</loc>
-    <lastmod>2018-11-14T09:11:21.536Z</lastmod>
-  </url>  <url>
     <loc>https://www.soliton.wang/2018/09/18/Service_PHP-7-2-1_install/</loc>
     <lastmod>2018-11-14T09:11:21.536Z</lastmod>
   </url>  <url>
-    <loc>https://www.soliton.wang/2018/09/19/Service_Mysql-5-7-20_install/</loc>
+    <loc>https://www.soliton.wang/2018/09/20/Service-ZABBIX-3-4-8-install/</loc>
+    <lastmod>2018-11-14T09:11:21.536Z</lastmod>
+  </url>  <url>
+    <loc>https://www.soliton.wang/2018/09/03/Service-Nginx-1-12-2-install/</loc>
     <lastmod>2018-11-14T09:11:21.535Z</lastmod>
   </url>  <url>
     <loc>https://www.soliton.wang/2018/09/04/Service_Mysql-5-6-25_install/</loc>
@@ -43,19 +43,19 @@
     <loc>https://www.soliton.wang/2018/09/04/Service_PHP-5-6-37_install/</loc>
     <lastmod>2018-11-14T09:11:21.535Z</lastmod>
   </url>  <url>
-    <loc>https://www.soliton.wang/2018/09/03/Service-Nginx-1-12-2-install/</loc>
+    <loc>https://www.soliton.wang/2018/09/19/Service_Mysql-5-7-20_install/</loc>
     <lastmod>2018-11-14T09:11:21.535Z</lastmod>
   </url>  <url>
-    <loc>https://www.soliton.wang/2018/09/11/Selenium-Chrome-Chromedriver/</loc>
-    <lastmod>2018-11-14T09:11:21.534Z</lastmod>
-  </url>  <url>
-    <loc>https://www.soliton.wang/2018/09/20/remotely-install-system/</loc>
+    <loc>https://www.soliton.wang/2018/09/17/PXE-install-system/</loc>
     <lastmod>2018-11-14T09:11:21.534Z</lastmod>
   </url>  <url>
     <loc>https://www.soliton.wang/2018/11/13/rsync-inotify/</loc>
     <lastmod>2018-11-14T09:11:21.534Z</lastmod>
   </url>  <url>
-    <loc>https://www.soliton.wang/2018/09/17/PXE-install-system/</loc>
+    <loc>https://www.soliton.wang/2018/09/20/remotely-install-system/</loc>
+    <lastmod>2018-11-14T09:11:21.534Z</lastmod>
+  </url>  <url>
+    <loc>https://www.soliton.wang/2018/09/11/Selenium-Chrome-Chromedriver/</loc>
     <lastmod>2018-11-14T09:11:21.534Z</lastmod>
   </url>  <url>
     <loc>https://www.soliton.wang/2018/09/04/PHP-install-Parameter-description/</loc>
@@ -64,19 +64,19 @@
     <loc>https://www.soliton.wang/2018/09/04/PHP-install-Parameter-dependence/</loc>
     <lastmod>2018-11-14T09:11:21.533Z</lastmod>
   </url>  <url>
-    <loc>https://www.soliton.wang/2018/09/20/Oracle-11g-install-Graphing/</loc>
+    <loc>https://www.soliton.wang/2018/09/19/Oracle-11g-Silence-install/</loc>
     <lastmod>2018-11-14T09:11:21.533Z</lastmod>
   </url>  <url>
-    <loc>https://www.soliton.wang/2018/09/19/Oracle-11g-Silence-install/</loc>
+    <loc>https://www.soliton.wang/2018/09/20/Oracle-11g-install-Graphing/</loc>
     <lastmod>2018-11-14T09:11:21.533Z</lastmod>
   </url>  <url>
     <loc>https://www.soliton.wang/2018/10/17/centos-install-vsftpd/</loc>
     <lastmod>2018-11-14T09:11:21.532Z</lastmod>
   </url>  <url>
-    <loc>https://www.soliton.wang/2018/09/01/Nginx-conf/</loc>
+    <loc>https://www.soliton.wang/2018/10/08/docker-command/</loc>
     <lastmod>2018-11-14T09:11:21.532Z</lastmod>
   </url>  <url>
-    <loc>https://www.soliton.wang/2018/10/08/docker-command/</loc>
+    <loc>https://www.soliton.wang/2018/09/01/Nginx-conf/</loc>
     <lastmod>2018-11-14T09:11:21.532Z</lastmod>
   </url>  <url>
     <loc>https://www.soliton.wang/2018/10/16/Centos-install-Shadowsocks/</loc>
