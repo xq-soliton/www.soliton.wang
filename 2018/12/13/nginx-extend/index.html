@@ -129,16 +129,18 @@
 
 
 
-  <meta name="description" content="I will use my life to replace you for ten years.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="soliton">
-<meta property="og:url" content="https://www.soliton.wang/tags/HP/index.html">
+  <meta name="description" content="本文讲解的是nginx一些配置。 禁止某些访问请求  判断请求连接,带?360所有的网页返回404.123if ($request_uri &quot;360&quot;)&amp;#123;	return 404;&amp;#125; 判断请求连接 尾缀是html?360返回404.123if ($request_uri &quot;html\?360$&quot;)&amp;#123;	return 404;&amp;#125;">
+<meta name="keywords" content="Service_Nginx">
+<meta property="og:type" content="article">
+<meta property="og:title" content="nginx_extend">
+<meta property="og:url" content="https://www.soliton.wang/2018/12/13/nginx-extend/index.html">
 <meta property="og:site_name" content="soliton">
-<meta property="og:description" content="I will use my life to replace you for ten years.">
+<meta property="og:description" content="本文讲解的是nginx一些配置。 禁止某些访问请求  判断请求连接,带?360所有的网页返回404.123if ($request_uri &quot;360&quot;)&amp;#123;	return 404;&amp;#125; 判断请求连接 尾缀是html?360返回404.123if ($request_uri &quot;html\?360$&quot;)&amp;#123;	return 404;&amp;#125;">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-12-13T09:13:40.073Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="soliton">
-<meta name="twitter:description" content="I will use my life to replace you for ten years.">
+<meta name="twitter:title" content="nginx_extend">
+<meta name="twitter:description" content="本文讲解的是nginx一些配置。 禁止某些访问请求  判断请求连接,带?360所有的网页返回404.123if ($request_uri &quot;360&quot;)&amp;#123;	return 404;&amp;#125; 判断请求连接 尾缀是html?360返回404.123if ($request_uri &quot;html\?360$&quot;)&amp;#123;	return 404;&amp;#125;">
 
 
 
@@ -147,7 +149,7 @@
 
 
 
-  <link rel="canonical" href="https://www.soliton.wang/tags/HP/"/>
+  <link rel="canonical" href="https://www.soliton.wang/2018/12/13/nginx-extend/"/>
 
 
 
@@ -157,7 +159,7 @@
   };
 </script>
 
-  <title>标签: HP | soliton</title>
+  <title>nginx_extend | soliton</title>
   
 
 
@@ -210,7 +212,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
@@ -258,7 +260,7 @@
         
         
           
-          <li class="menu-item menu-item-tags menu-item-active">
+          <li class="menu-item menu-item-tags">
     <a href="/tags/" rel="section">
       <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签<span class="badge">24</span></a>
   </li>
@@ -370,93 +372,220 @@
           
             
 
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
-
           
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block tag">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h2>HP<small>标签</small>
-        </h2>
-      </div>
+  
 
-      
-        
+  
+  
+  
+
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://www.soliton.wang/2018/12/13/nginx-extend/">
 
-      <h3 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="soliton">
+      <meta itemprop="description" content="I will use my life to replace you for ten years.">
+      <meta itemprop="image" content="/images/logo.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="soliton">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2018/09/20/remotely-install-system/" itemprop="url">
-              
-                <span itemprop="name">remotely_install_system</span>
-              
-            </a>
         
-      </h3>
+          <h2 class="post-title" itemprop="name headline">nginx_extend
+              
+            
+          </h2>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-09-20T15:41:24+08:00"
-              content="2018-09-20" >
-          09-20
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
 
-    </header>
-  </article>
+            
+            
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-12-13 17:08:44 / 修改时间：17:13:40" itemprop="dateCreated datePublished" datetime="2018-12-13T17:08:44+08:00">2018-12-13</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Nginx/" itemprop="url" rel="index"><span itemprop="name">Nginx</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>本文讲解的是nginx一些配置。</p>
+<h3>禁止某些访问请求</h3>
+
+<p>判断请求连接,带?360所有的网页返回404.<br><figure class="highlight autoit"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> ($request_uri <span class="string">"360"</span>)&#123;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">404</span><span class="comment">;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>判断请求连接 尾缀是html?360返回404.<br><figure class="highlight autoit"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> ($request_uri <span class="string">"html\?360$"</span>)&#123;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">404</span><span class="comment">;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
 
+    
+
+    
+    
+    
+
+	<div><div>
+
+    <div style="text-align:center;color: #1f1d1d;font-size:24px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+
+</div>
+</div>
+    
+
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>soliton</li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://www.soliton.wang/2018/12/13/nginx-extend/" title="nginx_extend">https://www.soliton.wang/2018/12/13/nginx-extend/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Service-Nginx/" rel="tag"><i class="fa fa-tag"></i> Service_Nginx</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/12/13/Nginx-Install-Parameter/" rel="next" title="Nginx_Install_parameter">
+                <i class="fa fa-chevron-left"></i> Nginx_Install_parameter
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
+
+  </div>
 
 
           </div>
           
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zOTE3MS8xNTY5OA=="></div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -477,8 +606,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -662,6 +800,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">禁止某些访问请求</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -893,6 +1047,10 @@ setInterval("createtime()",250);
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.4.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.4.1"></script>
+
+
 
   
 
@@ -905,6 +1063,20 @@ setInterval("createtime()",250);
 
 
 
+  
+    <script type="text/javascript">
+      window.livereOptions = {
+        refer: '2018/12/13/nginx-extend/'
+      };
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
   
 
 
@@ -1314,7 +1486,7 @@ setInterval("createtime()",250);
   <script src="/lib/bookmark/bookmark.min.js?v=1.0"></script>
   <script type="text/javascript">
   
-    bookmark.loadBookmark();
+    bookmark.scrollToMark('auto', "#更多");
   
   </script>
 

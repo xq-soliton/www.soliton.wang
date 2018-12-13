@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.soliton.wang/"/>
-  <updated>2018-12-13T08:44:42.773Z</updated>
+  <updated>2018-12-13T09:13:40.073Z</updated>
   <id>https://www.soliton.wang/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>nginx_extend</title>
+    <link href="https://www.soliton.wang/2018/12/13/nginx-extend/"/>
+    <id>https://www.soliton.wang/2018/12/13/nginx-extend/</id>
+    <published>2018-12-13T09:08:44.000Z</published>
+    <updated>2018-12-13T09:13:40.073Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;本文讲解的是nginx一些配置。&lt;/p&gt;
+&lt;h3&gt;禁止某些访问请求&lt;/h3&gt;
+
+&lt;p&gt;判断请求连接,带?360所有的网页返回404.&lt;br&gt;&lt;figure class=&quot;highlight autoit&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
+        
+      
+    
+    </summary>
+    
+      <category term="Nginx" scheme="https://www.soliton.wang/categories/Nginx/"/>
+    
+    
+      <category term="Service_Nginx" scheme="https://www.soliton.wang/tags/Service-Nginx/"/>
+    
+  </entry>
   
   <entry>
     <title>Nginx_Install_parameter</title>
@@ -389,6 +418,26 @@
   </entry>
   
   <entry>
+    <title>Mysql-5.7.20_install</title>
+    <link href="https://www.soliton.wang/2018/09/19/Service_Mysql-5-7-20_install/"/>
+    <id>https://www.soliton.wang/2018/09/19/Service_Mysql-5-7-20_install/</id>
+    <published>2018-09-19T01:59:00.000Z</published>
+    <updated>2018-11-14T09:11:21.535Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Mysql 5.7.20编译安装教程&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Mysql" scheme="https://www.soliton.wang/categories/Mysql/"/>
+    
+    
+      <category term="Service_Mysql" scheme="https://www.soliton.wang/tags/Service-Mysql/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Oracle_11g_Silence_install</title>
     <link href="https://www.soliton.wang/2018/09/19/Oracle-11g-Silence-install/"/>
     <id>https://www.soliton.wang/2018/09/19/Oracle-11g-Silence-install/</id>
@@ -407,26 +456,6 @@
       <category term="Oracle" scheme="https://www.soliton.wang/tags/Oracle/"/>
     
       <category term="Xmanager5下载" scheme="https://www.soliton.wang/tags/Xmanager5%E4%B8%8B%E8%BD%BD/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Mysql-5.7.20_install</title>
-    <link href="https://www.soliton.wang/2018/09/19/Service_Mysql-5-7-20_install/"/>
-    <id>https://www.soliton.wang/2018/09/19/Service_Mysql-5-7-20_install/</id>
-    <published>2018-09-19T01:59:00.000Z</published>
-    <updated>2018-11-14T09:11:21.535Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Mysql 5.7.20编译安装教程&lt;br&gt;
-    
-    </summary>
-    
-      <category term="Mysql" scheme="https://www.soliton.wang/categories/Mysql/"/>
-    
-    
-      <category term="Service_Mysql" scheme="https://www.soliton.wang/tags/Service-Mysql/"/>
     
   </entry>
   
