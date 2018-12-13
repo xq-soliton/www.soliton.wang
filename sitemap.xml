@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.soliton.wang/2018/12/13/Nginx-Install-Parameter/</loc>
+    
+    <lastmod>2018-12-13T08:38:06.518Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.soliton.wang/book/index.html</loc>
     
     <lastmod>2018-11-23T03:59:46.862Z</lastmod>
@@ -51,13 +58,6 @@
   </url>
   
   <url>
-    <loc>https://www.soliton.wang/2018/10/09/sphinx-coreseek/</loc>
-    
-    <lastmod>2018-11-14T09:11:21.537Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://www.soliton.wang/2018/09/20/zabbix-monitor-agentd/</loc>
     
     <lastmod>2018-11-14T09:11:21.537Z</lastmod>
@@ -72,9 +72,9 @@
   </url>
   
   <url>
-    <loc>https://www.soliton.wang/2018/09/18/Service_PHP-7-2-1_install/</loc>
+    <loc>https://www.soliton.wang/2018/10/09/sphinx-coreseek/</loc>
     
-    <lastmod>2018-11-14T09:11:21.536Z</lastmod>
+    <lastmod>2018-11-14T09:11:21.537Z</lastmod>
     
   </url>
   
@@ -86,9 +86,9 @@
   </url>
   
   <url>
-    <loc>https://www.soliton.wang/2018/09/03/Service-Nginx-1-12-2-install/</loc>
+    <loc>https://www.soliton.wang/2018/09/18/Service_PHP-7-2-1_install/</loc>
     
-    <lastmod>2018-11-14T09:11:21.535Z</lastmod>
+    <lastmod>2018-11-14T09:11:21.536Z</lastmod>
     
   </url>
   
@@ -100,7 +100,7 @@
   </url>
   
   <url>
-    <loc>https://www.soliton.wang/2018/09/04/Service_PHP-5-6-37_install/</loc>
+    <loc>https://www.soliton.wang/2018/09/03/Service-Nginx-1-12-2-install/</loc>
     
     <lastmod>2018-11-14T09:11:21.535Z</lastmod>
     
@@ -114,21 +114,14 @@
   </url>
   
   <url>
-    <loc>https://www.soliton.wang/2018/09/17/PXE-install-system/</loc>
+    <loc>https://www.soliton.wang/2018/09/04/Service_PHP-5-6-37_install/</loc>
     
-    <lastmod>2018-11-14T09:11:21.534Z</lastmod>
+    <lastmod>2018-11-14T09:11:21.535Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://www.soliton.wang/2018/11/13/rsync-inotify/</loc>
-    
-    <lastmod>2018-11-14T09:11:21.534Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.soliton.wang/2018/09/20/remotely-install-system/</loc>
     
     <lastmod>2018-11-14T09:11:21.534Z</lastmod>
     
@@ -142,7 +135,28 @@
   </url>
   
   <url>
+    <loc>https://www.soliton.wang/2018/09/20/remotely-install-system/</loc>
+    
+    <lastmod>2018-11-14T09:11:21.534Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.soliton.wang/2018/09/17/PXE-install-system/</loc>
+    
+    <lastmod>2018-11-14T09:11:21.534Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.soliton.wang/2018/09/04/PHP-install-Parameter-description/</loc>
+    
+    <lastmod>2018-11-14T09:11:21.533Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.soliton.wang/2018/09/20/Oracle-11g-install-Graphing/</loc>
     
     <lastmod>2018-11-14T09:11:21.533Z</lastmod>
     
@@ -157,13 +171,6 @@
   
   <url>
     <loc>https://www.soliton.wang/2018/09/19/Oracle-11g-Silence-install/</loc>
-    
-    <lastmod>2018-11-14T09:11:21.533Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.soliton.wang/2018/09/20/Oracle-11g-install-Graphing/</loc>
     
     <lastmod>2018-11-14T09:11:21.533Z</lastmod>
     
