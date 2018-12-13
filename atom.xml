@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.soliton.wang/"/>
-  <updated>2018-12-13T09:13:40.073Z</updated>
+  <updated>2018-12-13T09:14:39.250Z</updated>
   <id>https://www.soliton.wang/</id>
   
   <author>
@@ -21,20 +21,11 @@
     <link href="https://www.soliton.wang/2018/12/13/nginx-extend/"/>
     <id>https://www.soliton.wang/2018/12/13/nginx-extend/</id>
     <published>2018-12-13T09:08:44.000Z</published>
-    <updated>2018-12-13T09:13:40.073Z</updated>
+    <updated>2018-12-13T09:14:39.250Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;本文讲解的是nginx一些配置。&lt;/p&gt;
-&lt;h3&gt;禁止某些访问请求&lt;/h3&gt;
-
-&lt;p&gt;判断请求连接,带?360所有的网页返回404.&lt;br&gt;&lt;figure class=&quot;highlight autoit&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
-        
-      
+      &lt;p&gt;本文讲解的是nginx一些配置。&lt;br&gt;
     
     </summary>
     
