@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.soliton.wang/"/>
-  <updated>2018-12-17T04:47:02.635Z</updated>
+  <updated>2018-12-17T06:03:37.553Z</updated>
   <id>https://www.soliton.wang/</id>
   
   <author>
@@ -21,11 +21,11 @@
     <link href="https://www.soliton.wang/2018/12/17/ElasticSearch-%E5%8D%95%E6%9C%BA-Install/"/>
     <id>https://www.soliton.wang/2018/12/17/ElasticSearch-单机-Install/</id>
     <published>2018-12-17T03:23:39.000Z</published>
-    <updated>2018-12-17T04:47:02.635Z</updated>
+    <updated>2018-12-17T06:03:37.553Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;什么是ElasticSearch,根据其中文文档可以简单定义为以下三点,与传统的关系型数据库还是有较大的区别。&lt;br&gt;一个分布式的实施文档存储,每个字段可以被索引与搜索&lt;br&gt;一个分布式实时分析搜索引擎&lt;br&gt;可以胜任上百个服务节点的扩展，并支持PB级别的结构化或者非结构化数据。&lt;br&gt;
+      &lt;p&gt;什么是ElasticSearch,根据其中文文档可以简单定义为以下三点,与传统的关系型数据库还是有较大的区别。&lt;br&gt;一个分布式的实施文档存储,每个字段可以被索引与搜索。&lt;br&gt;一个分布式实时分析搜索引擎。&lt;br&gt;可以胜任上百个服务节点的扩展，并支持PB级别的结构化或者非结构化数据。&lt;br&gt;
     
     </summary>
     
