@@ -137,7 +137,7 @@
 <meta property="og:site_name" content="soliton">
 <meta property="og:description" content="什么是ElasticSearch,根据其中文文档可以简单定义为以下三点,与传统的关系型数据库还是有较大的区别。一个分布式的实施文档存储,每个字段可以被索引与搜索一个分布式实时分析搜索引擎可以胜任上百个服务节点的扩展，并支持PB级别的结构化或者非结构化数据。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-12-17T04:34:45.375Z">
+<meta property="og:updated_time" content="2018-12-17T04:38:47.462Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ElasticSearch_单机_Install">
 <meta name="twitter:description" content="什么是ElasticSearch,根据其中文文档可以简单定义为以下三点,与传统的关系型数据库还是有较大的区别。一个分布式的实施文档存储,每个字段可以被索引与搜索一个分布式实时分析搜索引擎可以胜任上百个服务节点的扩展，并支持PB级别的结构化或者非结构化数据。">
@@ -434,7 +434,7 @@
                 
               
 
-              <time title="创建时间：2018-12-17 11:23:39 / 修改时间：12:34:45" itemprop="dateCreated datePublished" datetime="2018-12-17T11:23:39+08:00">2018-12-17</time>
+              <time title="创建时间：2018-12-17 11:23:39 / 修改时间：12:38:47" itemprop="dateCreated datePublished" datetime="2018-12-17T11:23:39+08:00">2018-12-17</time>
             
 
             
@@ -495,8 +495,8 @@
 
 <p>ELK版本信息：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">Elasticsearch</span>：6<span class="selector-class">.5</span><span class="selector-class">.3</span></span><br><span class="line"><span class="selector-tag">Kibana</span>		 ：6<span class="selector-class">.5</span><span class="selector-class">.3</span></span><br><span class="line"><span class="selector-tag">Logstash</span>	 ：6<span class="selector-class">.5</span><span class="selector-class">.3</span></span><br></pre></td></tr></table></figure></p>
 <p></p><h3>安装目录:</h3><br><figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">/elk</span></span><br></pre></td></tr></table></figure><p></p>
-<p></p><h3>下载ElasticSearch安装包</h3><br><figure class="highlight clean"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">wget https:<span class="comment">//artifacts.elastic.co/downloads/elasticsearch/elasticsearch-6.5.3.tar.gz </span></span><br><span class="line">```	</span><br><span class="line">`提示`：安装ES需要JAVA支持,最低`jdk1<span class="number">.8</span>`,因为ES是用Java写的,所以咯还是安装jdk1<span class="number">.8</span>吧!其他版本的我没有试过,编译安装或是rpm都行,</span><br><span class="line">编译安装记得配置JAVA全局变量,在这里我就略过了。</span><br><span class="line">	</span><br><span class="line">&lt;h3&gt;elasticsearch安装及配置：&lt;/h3&gt;</span><br><span class="line">解压 elasticsearch：</span><br></pre></td></tr></table></figure><p></p>
-<p>tar zxvf /elk/elasticsearch-6.5.3.tar.gz<br>cd /elk/elasticsearch-6.5.3<br><figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="params">&lt;h3&gt;</span>修改elasticsearch配置文件,默认全是注释的<span class="params">&lt;/h3&gt;</span></span><br><span class="line">vim <span class="meta-keyword">/elk/</span>elasticsearch<span class="number">-6.5</span><span class="number">.3</span><span class="meta-keyword">/config/</span>elasticsearch.yml</span><br></pre></td></tr></table></figure></p>
+<p></p><h3>下载ElasticSearch安装包</h3><br><figure class="highlight clean"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">wget https:<span class="comment">//artifacts.elastic.co/downloads/elasticsearch/elasticsearch-6.5.3.tar.gz </span></span><br><span class="line">```	</span><br><span class="line">`提示`：安装ES需要JAVA支持,最低`jdk1<span class="number">.8</span>`,因为ES是用Java写的,所以咯还是安装jdk1<span class="number">.8</span>吧!其他版本的我没有试过,编译安装或是rpm都行,</span><br><span class="line">编译安装记得配置JAVA全局变量,在这里我就略过了。</span><br><span class="line">	</span><br><span class="line">&lt;h3&gt;elasticsearch安装及配置：&lt;/h3&gt;</span><br><span class="line"></span><br><span class="line">解压 elasticsearch：</span><br></pre></td></tr></table></figure><p></p>
+<p>tar zxvf /elk/elasticsearch-6.5.3.tar.gz<br>cd /elk/elasticsearch-6.5.3<br><figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="params">&lt;h3&gt;</span>修改elasticsearch配置文件,默认全是注释的<span class="params">&lt;/h3&gt;</span></span><br><span class="line"></span><br><span class="line">vim <span class="meta-keyword">/elk/</span>elasticsearch<span class="number">-6.5</span><span class="number">.3</span><span class="meta-keyword">/config/</span>elasticsearch.yml</span><br></pre></td></tr></table></figure></p>
 <p>+集群名,你配置所有的都需要一样<br>cluster.name: soliton-es-cluster</p>
 <p>+安装elasticsearch的主机名<br>node.name: test_a    </p>
 <p>+ES存放数据的目录<br>path.data: /data/es-data</p>
