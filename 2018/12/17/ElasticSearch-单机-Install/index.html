@@ -137,7 +137,7 @@
 <meta property="og:site_name" content="soliton">
 <meta property="og:description" content="什么是ElasticSearch,根据其中文文档可以简单定义为以下三点,与传统的关系型数据库还是有较大的区别。一个分布式的实施文档存储,每个字段可以被索引与搜索。一个分布式实时分析搜索引擎。可以胜任上百个服务节点的扩展，并支持PB级别的结构化或者非结构化数据。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-12-17T06:03:37.553Z">
+<meta property="og:updated_time" content="2018-12-17T06:05:06.599Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ElasticSearch_单机_Install">
 <meta name="twitter:description" content="什么是ElasticSearch,根据其中文文档可以简单定义为以下三点,与传统的关系型数据库还是有较大的区别。一个分布式的实施文档存储,每个字段可以被索引与搜索。一个分布式实时分析搜索引擎。可以胜任上百个服务节点的扩展，并支持PB级别的结构化或者非结构化数据。">
@@ -434,7 +434,7 @@
                 
               
 
-              <time title="创建时间：2018-12-17 11:23:39 / 修改时间：14:03:37" itemprop="dateCreated datePublished" datetime="2018-12-17T11:23:39+08:00">2018-12-17</time>
+              <time title="创建时间：2018-12-17 11:23:39 / 修改时间：14:05:06" itemprop="dateCreated datePublished" datetime="2018-12-17T11:23:39+08:00">2018-12-17</time>
             
 
             
@@ -492,7 +492,7 @@
       
         <p>什么是ElasticSearch,根据其中文文档可以简单定义为以下三点,与传统的关系型数据库还是有较大的区别。<br>一个分布式的实施文档存储,每个字段可以被索引与搜索。<br>一个分布式实时分析搜索引擎。<br>可以胜任上百个服务节点的扩展，并支持PB级别的结构化或者非结构化数据。<br><a id="more"></a></p>
 <p></p><h3>系统环境</h3><br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">OS</span>     ：<span class="selector-tag">CentOS</span> <span class="selector-tag">Linux</span> <span class="selector-tag">release</span> 7<span class="selector-class">.3</span><span class="selector-class">.1611</span> (<span class="selector-tag">Core</span>)</span><br><span class="line"><span class="selector-tag">kernel</span> : 3<span class="selector-class">.10</span><span class="selector-class">.0-514</span><span class="selector-class">.el7</span><span class="selector-class">.x86_64</span></span><br><span class="line"><span class="selector-tag">Memory</span> : 3<span class="selector-tag">G</span></span><br></pre></td></tr></table></figure><p></p>
-<p></p><h3>关闭防火墙 &amp;&amp; SELINUX</h3><br><figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">systemctl stop firewalld</span><br><span class="line">systemctl disable firewalld</span><br><span class="line">setenforce <span class="number">0</span></span><br><span class="line">sed -i <span class="string">"s/enforcing/disabled/g"</span> /etc/selinux/config</span><br><span class="line">```		</span><br><span class="line">&lt;h3&gt;ELK版本信息<span class="symbol">:&lt;/h3&gt;</span></span><br></pre></td></tr></table></figure><p></p>
+<p></p><h3>关闭防火墙 &amp;&amp; SELINUX</h3><br><figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">systemctl stop firewalld</span><br><span class="line">systemctl disable firewalld</span><br><span class="line">setenforce <span class="number">0</span></span><br><span class="line">sed -i <span class="string">"s/enforcing/disabled/g"</span> /etc/selinux/config		</span><br><span class="line"></span><br><span class="line">&lt;h3&gt;ELK版本信息<span class="symbol">:&lt;/h3&gt;</span></span><br></pre></td></tr></table></figure><p></p>
 <pre><code>Elasticsearch：6.5.3
 Kibana         ：6.5.3
 Logstash     ：6.5.3
