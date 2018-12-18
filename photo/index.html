@@ -62,14 +62,27 @@
       
       <div class="search" id="search-form-wrap">
 
-    <form class="search-form sidebar-form" method="GET" action="https://www.baidu.com/s?">
-	<div class="input-group">
-    	<input name="wd" type="text" class="form-control search-form-input" placeholder="搜索" />
-	    <span class="input-group-btn">
-	    	<button type="submit" class=" btn btn-flat search-form-submit"><i class="icon icon-search"></i></button>
-	    </span>
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="搜索" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i class="icon icon-search"></i></button>
+            </span>
+        </div>
+    </form>
+    <div class="ins-search">
+  <div class="ins-search-mask"></div>
+  <div class="ins-search-container">
+    <div class="ins-input-wrapper">
+      <input type="text" class="ins-search-input" placeholder="想要查找什么..." x-webkit-speech />
+      <button type="button" class="close ins-close ins-selectable" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
     </div>
-</form>
+    <div class="ins-section-wrapper">
+      <div class="ins-section-container"></div>
+    </div>
+  </div>
+</div>
+
 
 </div>
       <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
@@ -378,7 +391,7 @@
         <span class="post-comment"><i class="icon icon-comment"></i> <a href="/photo/index.html#comments" class="article-comment-link">评论</a></span>
         
 	
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 92(字)</span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 105(字)</span>
 	
 	
 		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 1(分)</span>
@@ -399,7 +412,7 @@
 <div id="decryptionError" style="display: none;">Incorrect Password!</div>
 <div id="noContentError" style="display: none;">No content to display!</div>
 <div id="encrypt-blog" style="display:none">
-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
+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
 </div>
 <script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">
       
@@ -553,6 +566,24 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
 </script>
 <script src="/js/plugin.min.js"></script>
 <script src="/js/application.js"></script>
+
+    <script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(未命名)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
 
 
     <script>
