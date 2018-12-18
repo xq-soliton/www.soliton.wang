@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang=zh>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no,email=no,adress=no">
+  <!-- Color theme for statusbar -->
+  <meta name="theme-color" content="#000000" />
+  <!-- 强制页面在当前窗口以独立页面显示,防止别人在框架里调用页面 -->
+  <meta http-equiv="window-target" content="_top" />
+  
+  
+  <title>Oracle_11g_install_Graphing | soliton</title>
+  <meta name="description" content="Red Hat  7.2  静默安装oracle 11g">
+<meta name="keywords" content="Oracle,Xmanager5下载">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Oracle_11g_install_Graphing">
+<meta property="og:url" content="https://www.soliton.wang/2018/09/20/Oracle-11g-install-Graphing/index.html">
+<meta property="og:site_name" content="soliton">
+<meta property="og:description" content="Red Hat  7.2  静默安装oracle 11g">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://soliton.net.cn/soliton.images/oracle1.png">
+<meta property="og:image" content="https://soliton.net.cn/soliton.images/oracle2.png">
+<meta property="og:image" content="https://soliton.net.cn/soliton.images/oracle3.png">
+<meta property="og:image" content="https://soliton.net.cn/soliton.images/oracle4.png">
+<meta property="og:image" content="https://soliton.net.cn/soliton.images/oracle5.png">
+<meta property="og:image" content="https://soliton.net.cn/soliton.images/oracle6.png">
+<meta property="og:image" content="https://soliton.net.cn/soliton.images/oracle7png.png">
+<meta property="og:image" content="https://soliton.net.cn/soliton.images/oracle8.png">
+<meta property="og:image" content="https://soliton.net.cn/soliton.images/oracle9.png">
+<meta property="og:image" content="https://soliton.net.cn/soliton.images/oracle10.png">
+<meta property="og:image" content="https://soliton.net.cn/soliton.images/oracle11.png">
+<meta property="og:image" content="https://soliton.net.cn/soliton.images/oracle12.png">
+<meta property="og:image" content="https://soliton.net.cn/soliton.images/oracle13.png">
+<meta property="og:image" content="https://soliton.net.cn/soliton.images/oracle14.png">
+<meta property="og:image" content="https://soliton.net.cn/soliton.images/oracle15.png">
+<meta property="og:image" content="https://soliton.net.cn/soliton.images/oracle16.png">
+<meta property="og:image" content="https://soliton.net.cn/soliton.images/oracle17.png">
+<meta property="og:image" content="https://soliton.net.cn/soliton.images/oracle18.png">
+<meta property="og:image" content="https://soliton.net.cn/soliton.images/oracle19.png">
+<meta property="og:image" content="https://soliton.net.cn/soliton.images/oracle20.png">
+<meta property="og:image" content="https://soliton.net.cn/soliton.images/oracle21.png">
+<meta property="og:image" content="https://soliton.net.cn/soliton.images/oracle22.png">
+<meta property="og:updated_time" content="2018-11-14T09:11:21.533Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Oracle_11g_install_Graphing">
+<meta name="twitter:description" content="Red Hat  7.2  静默安装oracle 11g">
+<meta name="twitter:image" content="https://soliton.net.cn/soliton.images/oracle1.png">
+  <!-- Canonical links -->
+  <link rel="canonical" href="https://www.soliton.wang/2018/09/20/Oracle-11g-install-Graphing/index.html">
+  
+    <link rel="alternate" href="/atom.xml" title="soliton" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png" type="image/x-icon">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+  
+  
+  
+</head>
+
+
+<body class="main-center" itemscope itemtype="http://schema.org/WebPage">
+  <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+  <div class="slimContent">
+    <div class="navbar-header">
+      
+      
+      <div class="profile-block text-center">
+        <a id="avatar" href="http://www.soliton.wang" target="_blank">
+          <img class="img-circle img-rotate" src="/images/avatar.jpg" width="200" height="200">
+        </a>
+        <h2 id="name" class="hidden-xs hidden-sm">念旧</h2>
+        <h3 id="title" class="hidden-xs hidden-sm hidden-md">我愿用我一生,换你十年天真无邪</h3>
+        <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i> WuHan, HuBei , China</small>
+      </div>
+      
+      <div class="search" id="search-form-wrap">
+
+    <form class="search-form sidebar-form" method="GET" action="https://www.baidu.com/s?">
+	<div class="input-group">
+    	<input name="wd" type="text" class="form-control search-form-input" placeholder="搜索" />
+	    <span class="input-group-btn">
+	    	<button type="submit" class=" btn btn-flat search-form-submit"><i class="icon icon-search"></i></button>
+	    </span>
+    </div>
+</form>
+
+</div>
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+      <ul class="nav navbar-nav main-nav menu-highlight">
+        
+        
+        <li class="menu-item menu-item-home">
+          <a href="/.">
+            
+            <span class="menu-title">首页</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives">
+            
+            <span class="menu-title">归档</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-docker">
+          <a href="/docker">
+            
+            <span class="menu-title">容器</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-photo">
+          <a href="/photo">
+            
+            <span class="menu-title">照片</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-book">
+          <a href="/book">
+            
+            <span class="menu-title">书单</span>
+          </a>
+        </li>
+        
+      </ul>
+      
+	
+    <ul class="social-links">
+    	
+        <li><a href="https://xq-soliton.github.io" target="_blank" title="Github" data-toggle=tooltip data-placement=top><i class="icon icon-github"></i></a></li>
+        
+        <li><a href="mailto:Linux_Wangxinqiu@163.com || envelope" target="_blank" title="E-Mail" data-toggle=tooltip data-placement=top><i class="icon icon-E-Mail"></i></a></li>
+        
+        <li><a href="mailto:soliton.wang@gmail.com || google" target="_blank" title="Google" data-toggle=tooltip data-placement=top><i class="icon icon-Google"></i></a></li>
+        
+        <li><a href="http://sighttp.qq.com/msgrd?v=1&uin=1670829014 || qq" target="_blank" title="QQ" data-toggle=tooltip data-placement=top><i class="icon icon-QQ"></i></a></li>
+        
+        <li><a href="https://www.zhihu.com/people/soliton.wang/activities || zhihu" target="_blank" title="知乎" data-toggle=tooltip data-placement=top><i class="icon icon-知乎"></i></a></li>
+        
+    </ul>
+
+    </nav>
+  </div>
+</header>
+
+  
+    <aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title">公告</h3>
+    <div class="widget-body">
+        <div id="board">
+            <div class="content">
+                <p>欢迎交流与分享经验!</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">分类</h3>
+    <div class="widget-body">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Database/">Database</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Disk/">Disk</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Docker-常用命令/">Docker-常用命令</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/ElasticSearch/">ElasticSearch</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/FTP/">FTP</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/HP/">HP</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Mysql/">Mysql</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Nginx/">Nginx</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Oracle/">Oracle</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/PHP/">PHP</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/PXE/">PXE</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Selenium-Chrome-Chromedriver/">Selenium+Chrome+Chromedriver</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Update/">Update</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/VPN/">VPN</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/ZABBIX/">ZABBIX</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/ZABBIX/">ZABBIX </a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/sphinx/">sphinx</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/文件实时同步/">文件实时同步</a><span class="category-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget-body">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Docker/">-Docker</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Service-Nginx/">-Service_Nginx</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Centos/">Centos</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Centos7/">Centos7</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Chrome/">Chrome</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ELK/">ELK</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/HP/">HP</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mongodb/">Mongodb</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Monitor/">Monitor</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mysql/">Mysql</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Oracle/">Oracle</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Oracle-Orabbix/">Oracle_Orabbix</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/PXE/">PXE</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python-Update/">Python_Update</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Selenium/">Selenium</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Service-Mysql/">Service_Mysql</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Service-Nginx/">Service_Nginx</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Service-PHP/">Service_PHP</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Service-vsftpd/">Service_vsftpd</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Shadowsocks/">Shadowsocks</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/WeChat/">WeChat</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Xmanager5下载/">Xmanager5下载</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/coreseek/">coreseek</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/rsync-inotify/">rsync+inotify</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sphinx/">sphinx</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget-body tagcloud">
+      <a href="/tags/Docker/" style="font-size: 13px;">-Docker</a> <a href="/tags/Service-Nginx/" style="font-size: 13px;">-Service_Nginx</a> <a href="/tags/Centos/" style="font-size: 13px;">Centos</a> <a href="/tags/Centos7/" style="font-size: 13px;">Centos7</a> <a href="/tags/Chrome/" style="font-size: 13px;">Chrome</a> <a href="/tags/ELK/" style="font-size: 13px;">ELK</a> <a href="/tags/HP/" style="font-size: 13px;">HP</a> <a href="/tags/Mongodb/" style="font-size: 13px;">Mongodb</a> <a href="/tags/Monitor/" style="font-size: 14px;">Monitor</a> <a href="/tags/Mysql/" style="font-size: 13px;">Mysql</a> <a href="/tags/Oracle/" style="font-size: 13.25px;">Oracle</a> <a href="/tags/Oracle-Orabbix/" style="font-size: 13px;">Oracle_Orabbix</a> <a href="/tags/PXE/" style="font-size: 13px;">PXE</a> <a href="/tags/Python-Update/" style="font-size: 13px;">Python_Update</a> <a href="/tags/Selenium/" style="font-size: 13px;">Selenium</a> <a href="/tags/Service-Mysql/" style="font-size: 13.25px;">Service_Mysql</a> <a href="/tags/Service-Nginx/" style="font-size: 13.5px;">Service_Nginx</a> <a href="/tags/Service-PHP/" style="font-size: 13.75px;">Service_PHP</a> <a href="/tags/Service-vsftpd/" style="font-size: 13px;">Service_vsftpd</a> <a href="/tags/Shadowsocks/" style="font-size: 13px;">Shadowsocks</a> <a href="/tags/WeChat/" style="font-size: 13px;">WeChat</a> <a href="/tags/Xmanager5下载/" style="font-size: 13.25px;">Xmanager5下载</a> <a href="/tags/coreseek/" style="font-size: 13px;">coreseek</a> <a href="/tags/rsync-inotify/" style="font-size: 13px;">rsync+inotify</a> <a href="/tags/sphinx/" style="font-size: 13px;">sphinx</a>
+    </div>
+  </div>
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget-body">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">十二月 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">十一月 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">十月 2018</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">九月 2018</a><span class="archive-list-count">20</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget-body">
+      <ul class="recent-post-list list-unstyled ">
+        
+          <li>
+            
+            <div class="item-thumb">
+              <a href="/2018/12/17/ElasticSearch-单机-Install/" class="thumb">
+    
+    
+        <span class="thumb-image thumb-none"></span>
+    
+</a>
+
+            </div>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/ElasticSearch/">ElasticSearch</a>
+              </p>
+              <p class="item-title">
+                <a href="/2018/12/17/ElasticSearch-单机-Install/" class="title">ElasticSearch_单机_Install</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2018-12-17T03:23:39.000Z" itemprop="datePublished">2018-12-17</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-thumb">
+              <a href="/2018/12/13/nginx-extend/" class="thumb">
+    
+    
+        <span class="thumb-image thumb-none"></span>
+    
+</a>
+
+            </div>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/Nginx/">Nginx</a>
+              </p>
+              <p class="item-title">
+                <a href="/2018/12/13/nginx-extend/" class="title">nginx_extend</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2018-12-13T09:08:44.000Z" itemprop="datePublished">2018-12-13</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-thumb">
+              <a href="/2018/12/13/Nginx-Install-Parameter/" class="thumb">
+    
+    
+        <span class="thumb-image thumb-none"></span>
+    
+</a>
+
+            </div>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/Nginx/">Nginx</a>
+              </p>
+              <p class="item-title">
+                <a href="/2018/12/13/Nginx-Install-Parameter/" class="title">Nginx_Install_parameter</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2018-12-13T08:17:10.000Z" itemprop="datePublished">2018-12-13</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-thumb">
+              <a href="/2018/11/19/Centos7-Install-Mongodb/" class="thumb">
+    
+    
+        <span class="thumb-image thumb-none"></span>
+    
+</a>
+
+            </div>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/Database/">Database</a>
+              </p>
+              <p class="item-title">
+                <a href="/2018/11/19/Centos7-Install-Mongodb/" class="title">Centos7_Install_Mongodb</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2018-11-19T03:07:23.000Z" itemprop="datePublished">2018-11-19</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-thumb">
+              <a href="/2018/11/13/rsync-inotify/" class="thumb">
+    
+    
+        <span class="thumb-image thumb-none"></span>
+    
+</a>
+
+            </div>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/文件实时同步/">文件实时同步</a>
+              </p>
+              <p class="item-title">
+                <a href="/2018/11/13/rsync-inotify/" class="title">rsync+inotify</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2018-11-13T07:04:39.000Z" itemprop="datePublished">2018-11-13</time>
+              </p>
+            </div>
+          </li>
+          
+      </ul>
+    </div>
+  </div>
+  
+
+    
+  </div>
+</aside>
+
+  
+  
+<main class="main" role="main">
+  <div class="content">
+  <article id="post-Oracle-11g-install-Graphing" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Oracle_11g_install_Graphing
+    </h1>
+  
+
+      
+      <div class="article-meta">
+        <span class="article-date">
+    <i class="icon icon-calendar-check"></i>
+	<a href="/2018/09/20/Oracle-11g-install-Graphing/" class="article-date">
+	  <time datetime="2018-09-20T10:39:00.000Z" itemprop="datePublished">2018-09-20</time>
+	</a>
+</span>
+        
+  <span class="article-category">
+    <i class="icon icon-folder"></i>
+    <a class="article-category-link" href="/categories/Oracle/">Oracle</a>
+  </span>
+
+        
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>
+	<a class="article-tag-link" href="/tags/Oracle/">Oracle</a>, <a class="article-tag-link" href="/tags/Xmanager5下载/">Xmanager5下载</a>
+  </span>
+
+
+        
+	<span class="article-read hidden-xs">
+	    <i class="icon icon-eye-fill" aria-hidden="true"></i>
+	    <span id="busuanzi_container_page_pv">
+			<span id="busuanzi_value_page_pv">0</span>
+		</span>
+	</span>
+
+
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2018/09/20/Oracle-11g-install-Graphing/#comments" class="article-comment-link">评论</a></span>
+        
+	
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 1,288(字)</span>
+	
+	
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 6(分)</span>
+	
+
+      </div>
+    </div>
+    <div class="article-entry marked-body" itemprop="articleBody">
+      
+        <p>Red Hat  7.2  静默安装oracle 11g<br><a id="more"></a><br>下载需要工具：<a href="https://soliton.net.cn/download/windwos/Xmanager5.zip" target="_blank" rel="noopener">Xmanager5</a><br>xmanager5序列号：101210-450789-147200</p>
+<p>系统环境<br><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">OS    :Red Hat Enterprise Linux<span class="built_in"> Server </span>release 7.2 (Maipo)</span><br><span class="line">Kernel:3.10.0-327.el7.x86_64</span><br></pre></td></tr></table></figure></p>
+<p>Oracle 安装包<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">linux<span class="selector-class">.x64_11gR2_database_1of2</span><span class="selector-class">.zip</span></span><br><span class="line">linux<span class="selector-class">.x64_11gR2_database_2of2</span><span class="selector-class">.zip</span></span><br></pre></td></tr></table></figure></p>
+<p>硬件需求<br><figure class="highlight lsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">物理内存：至少<span class="number">1</span>G</span><br><span class="line">虚拟内存：物理内存的<span class="number">2</span>倍&lt;swap&gt;</span><br><span class="line">硬盘空间：全部安装需要<span class="number">5.1</span>G</span><br><span class="line">显示器是配色：<span class="number">256</span>色</span><br><span class="line">处理器：主频最少<span class="number">550</span>MHZ</span><br></pre></td></tr></table></figure></p>
+<p>修改主机名<br><figure class="highlight dsconfig"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">hostname </span> <span class="string">oracledb </span>   （临时修改主机名，重启无效）</span><br><span class="line"><span class="string">hostnamectl </span><span class="built_in">set-hostname</span> <span class="string">oracledb	</span>		（永久修改）</span><br></pre></td></tr></table></figure></p>
+<p>添加主机名和IP对应<br><figure class="highlight lsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/hosts</span><br><span class="line"></span><br><span class="line"><span class="number">172.16</span><span class="number">.1</span><span class="number">.230</span>   oracledb</span><br></pre></td></tr></table></figure></p>
+<p>安装Oracle前环境</p>
+<p><li>创建用户和组</li><br><figure class="highlight lsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">groupadd -g <span class="number">200</span> oinstall</span><br><span class="line">groupadd -g <span class="number">201</span> dba</span><br><span class="line">useradd -u <span class="number">440</span> -g oinstall -G dba oracle</span><br><span class="line">echo <span class="number">123456</span> | passwd --stdin oracle</span><br></pre></td></tr></table></figure></p>
+<p>修改内核参数<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">vi/etc/sysctl<span class="selector-class">.conf</span>    #末尾添加如下</span><br><span class="line"></span><br><span class="line">net<span class="selector-class">.ipv4</span><span class="selector-class">.ip_local_port_range</span>= <span class="number">9000</span> <span class="number">65500</span></span><br><span class="line">fs<span class="selector-class">.file-max</span> = <span class="number">6815744</span></span><br><span class="line">kernel<span class="selector-class">.shmall</span> = <span class="number">10523004</span></span><br><span class="line">kernel<span class="selector-class">.shmmax</span> = <span class="number">6465333657</span></span><br><span class="line">kernel<span class="selector-class">.shmmni</span> = <span class="number">4096</span></span><br><span class="line">kernel<span class="selector-class">.sem</span> = <span class="number">250</span> <span class="number">32000</span> <span class="number">100128</span></span><br><span class="line">net<span class="selector-class">.core</span><span class="selector-class">.rmem_default</span>=<span class="number">262144</span></span><br><span class="line">net<span class="selector-class">.core</span><span class="selector-class">.wmem_default</span>=<span class="number">262144</span></span><br><span class="line">net<span class="selector-class">.core</span><span class="selector-class">.rmem_max</span>=<span class="number">4194304</span></span><br><span class="line">net<span class="selector-class">.core</span><span class="selector-class">.wmem_max</span>=<span class="number">1048576</span></span><br><span class="line">fs<span class="selector-class">.aio-max-nr</span> = <span class="number">1048576</span></span><br><span class="line"></span><br><span class="line">sysctl -p</span><br></pre></td></tr></table></figure></p>
+<p>修改系统资源限制<br><figure class="highlight lsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/security/limits.conf</span><br><span class="line"></span><br><span class="line">oracle  soft  nproc  <span class="number">2047</span></span><br><span class="line">oracle  hard  nproc  <span class="number">16384</span></span><br><span class="line">oracle  soft  nofile  <span class="number">1024</span></span><br><span class="line">oracle  hard  nofile  <span class="number">65536</span></span><br></pre></td></tr></table></figure></p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/pam.d/login</span><br><span class="line"></span><br><span class="line">Session	required	pam_namespace<span class="selector-class">.so</span>  #下面添加一条pam_limits.so</span><br><span class="line">session		required		pam_limits.so</span><br></pre></td></tr></table></figure>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">vi/etc/profile</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> [ <span class="variable">$USER</span> =<span class="string">"oracle"</span> ]; then</span><br><span class="line">      <span class="keyword">if</span> [ <span class="variable">$SHELL</span> = <span class="string">"/bin/ksh"</span> ];then</span><br><span class="line">          ulimit -p 16384</span><br><span class="line">          ulimit -n 65536</span><br><span class="line">      <span class="keyword">else</span></span><br><span class="line">          ulimit -u 16384 -n 65536</span><br><span class="line">      fi</span><br><span class="line">fi</span><br></pre></td></tr></table></figure>
+<p>创建安装目录及设置权限<br><figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">mkdir -p	  <span class="meta-keyword">/opt/</span>oracle<span class="meta-keyword">/app/</span></span><br><span class="line">mkdir <span class="meta-keyword">/opt/</span>oracle<span class="meta-keyword">/oradata/</span></span><br><span class="line">chmod <span class="number">755</span> <span class="meta-keyword">/opt/</span>oracle/</span><br><span class="line">chmod <span class="number">775</span> <span class="meta-keyword">/opt/</span>oracle<span class="meta-keyword">/app/</span></span><br><span class="line">chown oracle.oinstall -R <span class="meta-keyword">/opt/</span>oracle/</span><br></pre></td></tr></table></figure></p>
+<p>设置oracle 用户的环境变量<br><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">su - root</span><br><span class="line"></span><br><span class="line">vim .bash_profile 	（最后添加）</span><br><span class="line"></span><br><span class="line"><span class="builtin-name">export</span> <span class="attribute">ORACLE_BASE</span>=/opt/oracle/app</span><br><span class="line"><span class="builtin-name">export</span> <span class="attribute">ORACLE_HOME</span>=<span class="variable">$ORACLE_BASE</span>/product/11.2.0/dbhome_1</span><br><span class="line"><span class="builtin-name">export</span> <span class="attribute">PATH</span>=<span class="variable">$PATH</span>:$ORACLE_HOME/bin</span><br><span class="line"><span class="builtin-name">export</span> <span class="attribute">ORACLE_SID</span>=orcl</span><br><span class="line"><span class="builtin-name">export</span> <span class="attribute">ORACLE_PID</span>=orcl</span><br><span class="line"></span><br><span class="line">source .bash_profile （立即生效）</span><br></pre></td></tr></table></figure></p>
+<h3>上传 oracle 11G_R2 两个zip文件</h3>
+
+<p>解压两个文件<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">unzip /opt/linux<span class="selector-class">.x64_11gR2_database_1of2</span><span class="selector-class">.zip</span></span><br><span class="line">unzip /opt/linux<span class="selector-class">.x64_11gR2_database_2of2</span><span class="selector-class">.zip</span></span><br><span class="line">mv database  /opt/</span><br></pre></td></tr></table></figure></p>
+<p>使所有用户都能访问图形桌面<br><figure class="highlight autoit"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root<span class="symbol">@oracledb</span>~]<span class="meta">#xhost +</span></span><br></pre></td></tr></table></figure></p>
+<p>切换到oracle用户安装<br><figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@oracledb~]<span class="comment">#su - oracle</span></span><br><span class="line">[oracle@oracledb~]$ cd <span class="regexp">/opt/database/</span></span><br></pre></td></tr></table></figure></p>
+<p>如果安装界面出现乱码则执行(没有乱码这一步跳过)<br><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="builtin-name">export</span> <span class="attribute">LANG</span>=en_US</span><br></pre></td></tr></table></figure></p>
+<p>不用输入Email地址，直接next<br><img src="https://soliton.net.cn/soliton.images/oracle1.png"><br>选择安装数据库软件并创建数据，也可以选择第二项仅安装数据库软件，然后next<br><img src="https://soliton.net.cn/soliton.images/oracle2.png"><br>选择服务器版本，如图，点击next<br><img src="https://soliton.net.cn/soliton.images/oracle3.png"><br>单例数据库安装，如图，点击Next<br><img src="https://soliton.net.cn/soliton.images/oracle4.png"><br>高级模式安装，如图，点击next<br><img src="https://soliton.net.cn/soliton.images/oracle5.png"><br>添加支持的语言，如图，点击next<br><img src="https://soliton.net.cn/soliton.images/oracle6.png"><br>选择要安装企业版，如图，点击next<br><img src="https://soliton.net.cn/soliton.images/oracle7png.png"><br>安装数据库目录，如图，点击next<br><img src="https://soliton.net.cn/soliton.images/oracle8.png"><br>创建详细目录，如图，点击next<br><img src="https://soliton.net.cn/soliton.images/oracle9.png"><br>选择配置类型<br><img src="https://soliton.net.cn/soliton.images/oracle10.png"><br>数据库与服务名<br><img src="https://soliton.net.cn/soliton.images/oracle11.png"><br>开启自动内存管理（如果512m太大，会出现提示，减少一些就可以），然后先不要点击next，而是点击Memory旁边的Charactor sets选项<br><img src="https://soliton.net.cn/soliton.images/oracle12.png"><br>设置默认编码为UTF8<br><img src="https://soliton.net.cn/soliton.images/oracle13.png"><br>启用oracle企业管理控制台OEM<br><img src="https://soliton.net.cn/soliton.images/oracle14.png"><br>选择数据库文件目录<br><img src="https://soliton.net.cn/soliton.images/oracle15.png"><br>自动备份设置<br><img src="https://soliton.net.cn/soliton.images/oracle16.png"><br>设置数据库用户名和密码，他是有一个密码建议的，否则会提示错误，密码建议是包含大写和小写字母，总长度不能低于8位。(1qQ.1qQ.)<br><img src="https://soliton.net.cn/soliton.images/oracle17.png"><br>授权的组<br><img src="https://soliton.net.cn/soliton.images/oracle18.png"><br>检查oracle一些安装要求，包都已经安装，直接忽略(没有可以装一下)<br><img src="https://soliton.net.cn/soliton.images/oracle19.png"><br>开始安装<br><img src="https://soliton.net.cn/soliton.images/oracle20.png"><br>安装中<br><img src="https://soliton.net.cn/soliton.images/oracle21.png"><br>数据库安装信息，点击OK<br><img src="https://soliton.net.cn/soliton.images/oracle22.png"></p>
+<p>点击OK之后，弹出一个窗口，不要点击新出来窗口的OK，用oracle 用户执行那两条命令<br><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="regexp">/opt/</span>oracle<span class="regexp">/oraInventory/</span>orainstRoot.sh</span><br><span class="line"><span class="regexp">/opt/</span>oracle<span class="regexp">/app/</span>product<span class="regexp">/11/</span><span class="number">2</span><span class="regexp">/0/</span>dbhome_1<span class="regexp">/root.sh</span></span><br></pre></td></tr></table></figure></p>
+<p><code>注</code>:如果在输入命令开启数据库的时候，提示bash:XXX command not found的时候很有可能是你没有在oracle用户下输入命令行，这时候用su oracle试一下，<br>如果还是不行可以到/opt/oracle/app/product/11.2.0/dbhome_1/bin目录下，确认一下此命令是否存在！！！<br>如果开启过程出现ERROR:ORA-12162:TNS:net service name is incorrectly specified这种语句的时候，很有可能是环境变量没有配置好<br>建议到oracle用户中的.bash_profile文件里查看一下，如何找到.bash_profile</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">su - oracle</span><br><span class="line">lsnrctl start</span><br><span class="line">sqlplus  /  as  sysdba</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">SQL&gt;</span><span class="bash"> startup</span></span><br><span class="line"><span class="meta">SQL&gt;</span><span class="bash"> shutdown immediate  关闭数据库实例</span></span><br><span class="line"><span class="meta">SQL&gt;</span><span class="bash">select * from tab;   <span class="comment">#查看所有表</span></span></span><br><span class="line"><span class="meta">SQL&gt;</span><span class="bash">select name from v<span class="variable">$datafile</span> <span class="comment">#查看数据库存放目录</span></span></span><br><span class="line"><span class="meta">SQL&gt;</span><span class="bash"> show parameter service   <span class="comment">#查看服务名</span></span></span><br><span class="line"><span class="meta">SQL&gt;</span><span class="bash"> select * from v<span class="variable">$instance</span>;	<span class="comment">#查看实例名</span></span></span><br><span class="line"><span class="meta">SQL&gt;</span><span class="bash"> select name from v<span class="variable">$database</span>;	<span class="comment">#查看数据库名</span></span></span><br><span class="line"><span class="meta">SQL&gt;</span><span class="bash"> select * fromdba_users;		<span class="comment">#查看所有用户信息</span></span></span><br><span class="line"><span class="meta">SQL&gt;</span><span class="bash"> select username,password from dba_users; 	<span class="comment">#只查询用户和密码</span></span></span><br><span class="line"><span class="meta">SQL&gt;</span><span class="bash"> select * fromv<span class="variable">$pwfile_users</span>; <span class="comment">#查看具有sysdba权限的用户</span></span></span><br><span class="line"><span class="meta">SQL&gt;</span><span class="bash"> select * fromdba_ustats; <span class="comment">#查看当前用户信息</span></span></span><br><span class="line"><span class="meta">SQL&gt;</span><span class="bash"> select * fromuser_sys_privs <span class="comment">#查看当前用户系统权限</span></span></span><br><span class="line"><span class="meta">SQL&gt;</span><span class="bash"> select * fromuser_role_privs <span class="comment">#查看当前用户角色</span></span></span><br><span class="line"><span class="meta">SQL&gt;</span><span class="bash"> select * fromdba_sys_privs <span class="comment">#查看指定用户所具有的系统权限</span></span></span><br><span class="line"><span class="meta">SQL&gt;</span><span class="bash"> select * fromv<span class="variable">$version</span> <span class="comment">#查看oracle版本</span></span></span><br><span class="line"><span class="meta">SQL&gt;</span><span class="bash"> select * fromuser_views <span class="comment">#查看视图信息</span></span></span><br></pre></td></tr></table></figure>
+<h3>RHEL7 图形化安装oracle结束</h3>
+
+
+
+      
+    </div>
+    <div class="article-footer">
+      <blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    
+    <li class="post-copyright-link hidden-xs">
+      <strong>本文链接：</strong>
+      <a href="https://www.soliton.wang/2018/09/20/Oracle-11g-install-Graphing/" title="Oracle_11g_install_Graphing" target="_blank" rel="external">https://www.soliton.wang/2018/09/20/Oracle-11g-install-Graphing/</a>
+    </li>
+    
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong> 本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN协议</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+</blockquote>
+
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="http://www.soliton.wang" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="/images/avatar.jpg" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="http://www.soliton.wang" target="_blank"><span class="text-dark">念旧</span><small class="ml-1x">我愿用我一生,换你十年天真无邪</small></a></h3>
+        <div>笔名:念旧   职位:运维。</div>
+      </div>
+    </figure>
+  </div>
+</div>
+
+
+    </div>
+  </article>
+  
+    
+  <section id="comments">
+  	
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zOTE3MS8xNTY5OA==">
+        <noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
+      </div>    
+    
+  </section>
+
+
+  
+</div>
+
+  <nav class="bar bar-footer clearfix" data-stick-bottom>
+  <div class="bar-inner">
+  
+  <ul class="pager pull-left">
+    
+    <li class="prev">
+      <a href="/2018/09/21/zabbix-monitor-Oracle/" title="zabbix_monitor_Oracle"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
+    </li>
+    
+    
+    <li class="next">
+      <a href="/2018/09/20/zabbix-monitor-huawei-server/" title="zabbix_monitor_huawei server"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+    </li>
+    
+    
+  </ul>
+  
+  
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-fancy btn-donate pop-onhover bg-gradient-warning" data-toggle="modal" data-target="#donateModal"><span>赏</span></button>
+  <!-- <div class="wave-icon wave-icon-danger btn-donate" data-toggle="modal" data-target="#donateModal">
+    <div class="wave-circle"><span class="icon"><i class="icon icon-bill"></i></span></div>
+  </div> -->
+  
+  
+  <div class="bar-right">
+    
+    <div class="share-component" data-sites="weibo,qq,wechat" data-mobile-sites="weibo,qq,qzone"></div>
+    
+  </div>
+  </div>
+</nav>
+  
+<!-- Modal -->
+<div class="modal modal-center modal-small modal-xs-full fade" id="donateModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content donate">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <div class="modal-body">
+        <div class="donate-box">
+          <div class="donate-head">
+            <p>感谢您的支持，我会继续努力的!</p>
+          </div>
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane fade active in" id="alipay">
+              <div class="donate-payimg">
+                <img src="/images/donate/alipayimg.png" alt="扫码支持" title="扫一扫" />
+              </div>
+              <p class="text-muted mv">扫码打赏，你说多少就多少</p>
+              <p class="text-grey">打开支付宝扫一扫，即可进行扫码打赏哦</p>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="wechatpay">
+              <div class="donate-payimg">
+                <img src="/images/donate/wechatpayimg.png" alt="扫码支持" title="扫一扫" />
+              </div>
+              <p class="text-muted mv">扫码打赏，你说多少就多少</p>
+              <p class="text-grey">打开微信扫一扫，即可进行扫码打赏哦</p>
+            </div>
+          </div>
+          <div class="donate-footer">
+            <ul class="nav nav-tabs nav-justified" role="tablist">
+              <li role="presentation" class="active">
+                <a href="#alipay" id="alipay-tab" role="tab" data-toggle="tab" aria-controls="alipay" aria-expanded="true"><i class="icon icon-alipay"></i> 支付宝</a>
+              </li>
+              <li role="presentation" class="">
+                <a href="#wechatpay" role="tab" id="wechatpay-tab" data-toggle="tab" aria-controls="wechatpay" aria-expanded="false"><i class="icon icon-wepay"></i> 微信支付</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+</main>
+
+  <footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+	
+	
+    <ul class="social-links">
+    	
+        <li><a href="https://xq-soliton.github.io" target="_blank" title="Github" data-toggle=tooltip data-placement=top><i class="icon icon-github"></i></a></li>
+        
+        <li><a href="mailto:Linux_Wangxinqiu@163.com || envelope" target="_blank" title="E-Mail" data-toggle=tooltip data-placement=top><i class="icon icon-E-Mail"></i></a></li>
+        
+        <li><a href="mailto:soliton.wang@gmail.com || google" target="_blank" title="Google" data-toggle=tooltip data-placement=top><i class="icon icon-Google"></i></a></li>
+        
+        <li><a href="http://sighttp.qq.com/msgrd?v=1&uin=1670829014 || qq" target="_blank" title="QQ" data-toggle=tooltip data-placement=top><i class="icon icon-QQ"></i></a></li>
+        
+        <li><a href="https://www.zhihu.com/people/soliton.wang/activities || zhihu" target="_blank" title="知乎" data-toggle=tooltip data-placement=top><i class="icon icon-知乎"></i></a></li>
+        
+    </ul>
+
+    <div class="copyright">
+    	
+        &copy; 2018 soliton
+        
+        <div class="publishby">
+        	Theme by <a href="https://github.com/cofess" target="_blank"> cofess </a>base on <a href="http://www.soliton.wang" target="_blank">念旧</a>.
+        </div>
+    </div>
+</footer>
+
+  <script src="//cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+<script>
+window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+<script src="/js/plugin.min.js"></script>
+<script src="/js/application.js"></script>
+
+
+    <script>
+(function ($) {
+    $('.search-form').on('submit', function (e) {
+        var keyword = $('.search-form-input[name="wd"]').val();
+        window.location = 'https://www.baidu.com/s?wd=site:www.soliton.wang ' + keyword;
+        return false;
+    });
+})(jQuery);
+</script>
+
+
+
+
+   
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+   
+    
+<script defer type="text/javascript">
+  (function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+
+    if (typeof LivereTower === 'function') { return; }
+
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+
+    e.parentNode.insertBefore(j, e);
+  })(document, 'script');
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>
