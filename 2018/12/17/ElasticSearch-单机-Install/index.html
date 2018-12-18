@@ -26,7 +26,7 @@
 <meta property="og:site_name" content="soliton">
 <meta property="og:description" content="什么是ElasticSearch,根据其中文文档可以简单定义为以下三点,与传统的关系型数据库还是有较大的区别。一个分布式的实施文档存储,每个字段可以被索引与搜索。一个分布式实时分析搜索引擎。可以胜任上百个服务节点的扩展，并支持PB级别的结构化或者非结构化数据。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-12-18T03:34:16.725Z">
+<meta property="og:updated_time" content="2018-12-18T03:36:10.380Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ElasticSearch_单机_Install">
 <meta name="twitter:description" content="什么是ElasticSearch,根据其中文文档可以简单定义为以下三点,与传统的关系型数据库还是有较大的区别。一个分布式的实施文档存储,每个字段可以被索引与搜索。一个分布式实时分析搜索引擎。可以胜任上百个服务节点的扩展，并支持PB级别的结构化或者非结构化数据。">
@@ -389,7 +389,7 @@
         <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2018/12/17/ElasticSearch-单机-Install/#comments" class="article-comment-link">评论</a></span>
         
 	
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 1,041(字)</span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 1,050(字)</span>
 	
 	
 		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 5(分)</span>
@@ -450,10 +450,8 @@ Logstash     ：6.5.3
 <p>#!/bin/sh</p>
 <p>#chkconfig: 2345 80 05</p>
 <p>#description: elasticsearch</p>
-<p>case “$1” in<br>start)<br>su elasticsearch&lt;&lt;elk<br>cd /elk/elasticsearch-6.5.3/<br>./bin/elasticsearch -d<br>elk<br>echo “elasticsearch startup”<br>;;<br>stop)<br>es_pid=<code>ps aux|grep elasticsearch | grep -v &#39;grep elasticsearch&#39; | awk &#39;{print $2}&#39;</code><br>kill -9 $es_pid<br>echo “elasticsearch stopped”<br>;;<br>restart)<br>es_pid=<code>ps aux|grep elasticsearch | grep -v &#39;grep elasticsearch&#39; | awk &#39;{print $2}&#39;</code><br>kill -9 $es_pid<br>echo “elasticsearch stopped”<br>su elasticsearch&lt;&lt;elk<br>cd /elk/elasticsearch-6.5.3/<br>./bin/elasticsearch -d<br>elk<br>echo “elasticsearch startup”<br>;;<br>*)<br>echo “start|stop|restart”<br>;;<br>esac<br>exit $?</p>
-<p>配置自启动</p>
-<p>chkconfig –add elasticsearch</p>
-<p>systemctl start elasticsearch.service        //启动<br>systemctl sotp elasticsearch.service        //关闭<br>systemctl status elasticsearch.service         //状态<br>systemctl enbale elasticsearch.service        //开机启动<br>systemctl disable elasticsearch.service        //开机不启动<br><code>`</code><br>添加安装访问:<br>找到了一个利用插件进行网页访问控制,感觉还不错(主要开源).<br><a heaf="https://blog.csdn.net/envinfo2012/article/details/76685818">SearchGuard</a><br>单机版的ES做到这里就结束了,后面还会做集群。</p>
+<p>case “$1” in<br>start)<br>su elasticsearch&lt;&lt;elk<br>cd /elk/elasticsearch-6.5.3/<br>./bin/elasticsearch -d<br>elk<br>echo “elasticsearch startup”<br>;;<br>stop)<br>es_pid=<code>ps aux|grep elasticsearch | grep -v &#39;grep elasticsearch&#39; | awk &#39;{print $2}&#39;</code><br>kill -9 $es_pid<br>echo “elasticsearch stopped”<br>;;<br>restart)<br>es_pid=<code>ps aux|grep elasticsearch | grep -v &#39;grep elasticsearch&#39; | awk &#39;{print $2}&#39;</code><br>kill -9 $es_pid<br>echo “elasticsearch stopped”<br>su elasticsearch&lt;&lt;elk<br>cd /elk/elasticsearch-6.5.3/<br>./bin/elasticsearch -d<br>elk<br>echo “elasticsearch startup”<br>;;<br>*)<br>echo “start|stop|restart”<br>;;<br>esac<br>exit $?<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">配置自启动</span><br><span class="line"></span><br><span class="line">chkconfig --add elasticsearch</span><br><span class="line"></span><br><span class="line">systemctl start elasticsearch<span class="selector-class">.service</span>		<span class="comment">//启动</span></span><br><span class="line">systemctl sotp elasticsearch<span class="selector-class">.service</span>		<span class="comment">//关闭</span></span><br><span class="line">systemctl status elasticsearch<span class="selector-class">.service</span> 		<span class="comment">//状态</span></span><br><span class="line">systemctl enbale elasticsearch<span class="selector-class">.service</span>		<span class="comment">//开机启动</span></span><br><span class="line">systemctl disable elasticsearch<span class="selector-class">.service</span>		<span class="comment">//开机不启动</span></span><br></pre></td></tr></table></figure></p>
+<p>添加安装访问:<br>找到了一个利用插件进行网页访问控制,感觉还不错(主要开源).<br><a heaf="https://blog.csdn.net/envinfo2012/article/details/76685818">SearchGuard</a><br>单机版的ES做到这里就结束了,后面还会做集群。</p>
 
       
     </div>
