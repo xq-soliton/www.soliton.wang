@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.soliton.wang/2018/12/19/Kibana-Install/</loc>
+    
+    <lastmod>2018-12-19T06:56:41.343Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.soliton.wang/2018/12/18/Elasticsearch-Cluster-Install/</loc>
     
     <lastmod>2018-12-19T02:57:31.104Z</lastmod>
@@ -86,20 +93,6 @@
   </url>
   
   <url>
-    <loc>https://www.soliton.wang/2018/09/20/zabbix-monitor-huawei-server/</loc>
-    
-    <lastmod>2018-11-14T09:11:21.537Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.soliton.wang/2018/09/20/zabbix-monitor-agentd/</loc>
-    
-    <lastmod>2018-11-14T09:11:21.537Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://www.soliton.wang/2018/10/09/sphinx-coreseek/</loc>
     
     <lastmod>2018-11-14T09:11:21.537Z</lastmod>
@@ -108,6 +101,20 @@
   
   <url>
     <loc>https://www.soliton.wang/2018/09/21/zabbix-agentd-install/</loc>
+    
+    <lastmod>2018-11-14T09:11:21.537Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.soliton.wang/2018/09/20/zabbix-monitor-huawei-server/</loc>
+    
+    <lastmod>2018-11-14T09:11:21.537Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.soliton.wang/2018/09/20/zabbix-monitor-agentd/</loc>
     
     <lastmod>2018-11-14T09:11:21.537Z</lastmod>
     
@@ -128,7 +135,7 @@
   </url>
   
   <url>
-    <loc>https://www.soliton.wang/2018/09/04/Service_Mysql-5-6-25_install/</loc>
+    <loc>https://www.soliton.wang/2018/09/03/Service-Nginx-1-12-2-install/</loc>
     
     <lastmod>2018-11-14T09:11:21.535Z</lastmod>
     
@@ -149,16 +156,9 @@
   </url>
   
   <url>
-    <loc>https://www.soliton.wang/2018/09/03/Service-Nginx-1-12-2-install/</loc>
+    <loc>https://www.soliton.wang/2018/09/04/Service_Mysql-5-6-25_install/</loc>
     
     <lastmod>2018-11-14T09:11:21.535Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.soliton.wang/2018/09/20/remotely-install-system/</loc>
-    
-    <lastmod>2018-11-14T09:11:21.534Z</lastmod>
     
   </url>
   
@@ -171,6 +171,13 @@
   
   <url>
     <loc>https://www.soliton.wang/2018/09/11/Selenium-Chrome-Chromedriver/</loc>
+    
+    <lastmod>2018-11-14T09:11:21.534Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.soliton.wang/2018/09/20/remotely-install-system/</loc>
     
     <lastmod>2018-11-14T09:11:21.534Z</lastmod>
     
@@ -198,13 +205,6 @@
   </url>
   
   <url>
-    <loc>https://www.soliton.wang/2018/09/20/Oracle-11g-install-Graphing/</loc>
-    
-    <lastmod>2018-11-14T09:11:21.533Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://www.soliton.wang/2018/09/04/PHP-install-Parameter-dependence/</loc>
     
     <lastmod>2018-11-14T09:11:21.533Z</lastmod>
@@ -212,7 +212,14 @@
   </url>
   
   <url>
-    <loc>https://www.soliton.wang/2018/09/01/Nginx-conf/</loc>
+    <loc>https://www.soliton.wang/2018/09/20/Oracle-11g-install-Graphing/</loc>
+    
+    <lastmod>2018-11-14T09:11:21.533Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.soliton.wang/2018/10/17/centos-install-vsftpd/</loc>
     
     <lastmod>2018-11-14T09:11:21.532Z</lastmod>
     
@@ -226,7 +233,7 @@
   </url>
   
   <url>
-    <loc>https://www.soliton.wang/2018/10/17/centos-install-vsftpd/</loc>
+    <loc>https://www.soliton.wang/2018/09/01/Nginx-conf/</loc>
     
     <lastmod>2018-11-14T09:11:21.532Z</lastmod>
     

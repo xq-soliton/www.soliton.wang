@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.soliton.wang/"/>
-  <updated>2018-12-19T02:57:31.104Z</updated>
+  <updated>2018-12-19T06:56:41.343Z</updated>
   <id>https://www.soliton.wang/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Kibana_Install</title>
+    <link href="https://www.soliton.wang/2018/12/19/Kibana-Install/"/>
+    <id>https://www.soliton.wang/2018/12/19/Kibana-Install/</id>
+    <published>2018-12-19T03:11:46.000Z</published>
+    <updated>2018-12-19T06:56:41.343Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;kibana 通过一个 web 界面提供日志的检索分析功能，还可以绘制各种图表，配置简单方便。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Kibana" scheme="https://www.soliton.wang/categories/Kibana/"/>
+    
+    
+      <category term="ELK" scheme="https://www.soliton.wang/tags/ELK/"/>
+    
+  </entry>
   
   <entry>
     <title>ElasticSearch_Cluster_Install</title>
