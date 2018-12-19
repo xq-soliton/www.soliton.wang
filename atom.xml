@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.soliton.wang/"/>
-  <updated>2018-12-18T07:30:24.772Z</updated>
+  <updated>2018-12-19T00:48:45.522Z</updated>
   <id>https://www.soliton.wang/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ElasticSearch_Cluster_Install</title>
+    <link href="https://www.soliton.wang/2018/12/18/Elasticsearch-Cluster-Install/"/>
+    <id>https://www.soliton.wang/2018/12/18/Elasticsearch-Cluster-Install/</id>
+    <published>2018-12-18T07:38:00.000Z</published>
+    <updated>2018-12-19T00:48:45.522Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;在前面,我已经写了ES的单机,在本文中我们来搭建集群并配置好集群,配置elasticsearch-head插件.&lt;br&gt;
+    
+    </summary>
+    
+      <category term="ElasticSearch" scheme="https://www.soliton.wang/categories/ElasticSearch/"/>
+    
+    
+      <category term="ELK" scheme="https://www.soliton.wang/tags/ELK/"/>
+    
+  </entry>
   
   <entry>
     <title>ElasticSearch_单机_Install</title>
