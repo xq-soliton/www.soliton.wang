@@ -26,7 +26,7 @@
 <meta property="og:site_name" content="soliton">
 <meta property="og:description" content="配置Kibana访问控制,利用X-pack插件进行登录验证。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-02-26T10:01:06.970Z">
+<meta property="og:updated_time" content="2019-02-26T10:02:07.304Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Kibana_Plugins_x-pack">
 <meta name="twitter:description" content="配置Kibana访问控制,利用X-pack插件进行登录验证。">
@@ -432,10 +432,17 @@
 <h3 id="安装X-pack插件-设置访问需要验证用户和密码"><a href="#安装X-pack插件-设置访问需要验证用户和密码" class="headerlink" title="安装X-pack插件,设置访问需要验证用户和密码."></a>安装<code>X-pack</code>插件,设置访问需要验证用户和密码.</h3><blockquote>
 <p>进入 /elk/Kibana-6.5.3 目录</p>
 <blockquote>
-<p>cd  /elk/Kibana-6.5.3<br>下载X-pack插件<br>./bin/Kibana-plugin install x-pack<br><em>有一个选择【Y/N】选择 Y</em></p>
+<p>cd  /elk/Kibana-6.5.3</p>
 </blockquote>
 </blockquote>
-<h3 id="安装完成后-重新启动Kibana"><a href="#安装完成后-重新启动Kibana" class="headerlink" title="安装完成后,重新启动Kibana"></a>安装完成后,重新启动Kibana</h3><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="regexp">/elk/</span>Kibana-<span class="number">6.5</span>.<span class="number">3</span><span class="regexp">/bin/</span>Kibana -d</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>下载X-pack插件</p>
+<blockquote>
+<p>./bin/Kibana-plugin install x-pack</p>
+</blockquote>
+</blockquote>
+<p><em>有一个选择【Y/N】选择 Y</em></p>
+<h3 id="安装完成后-重新启动Kibana"><a href="#安装完成后-重新启动Kibana" class="headerlink" title="安装完成后,重新启动Kibana"></a>安装完成后,重新启动Kibana</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/elk/Kibana<span class="number">-6.5</span><span class="number">.3</span>/bin/Kibana -d</span><br></pre></td></tr></table></figure>
 <h3 id="访问网页会弹出一个用户登录验证"><a href="#访问网页会弹出一个用户登录验证" class="headerlink" title="访问网页会弹出一个用户登录验证"></a>访问网页会弹出一个用户登录验证</h3><blockquote>
 <p>默认的用户名: elastic 密码:changeme</p>
 </blockquote>
