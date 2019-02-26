@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.soliton.wang/"/>
-  <updated>2019-02-26T09:55:21.175Z</updated>
+  <updated>2019-02-26T09:56:39.639Z</updated>
   <id>https://www.soliton.wang/</id>
   
   <author>
@@ -21,17 +21,11 @@
     <link href="https://www.soliton.wang/2019/02/26/Elasticsearch-Plugins-X-pack/"/>
     <id>https://www.soliton.wang/2019/02/26/Elasticsearch-Plugins-X-pack/</id>
     <published>2019-02-26T08:42:00.000Z</published>
-    <updated>2019-02-26T09:55:21.175Z</updated>
+    <updated>2019-02-26T09:56:39.639Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h4
-        
-      
+      &lt;h4 id=&quot;X-pack监控组件使您可以通过Kibana轻松地监控ElasticSearch。您可以实时查看集群的健康和性能，以及分析过去的集群、索引和节点度量。此外，您可以监视Kibana本身性能。当你安装X-pack在群集上，监控代理运行在每个节点上收集和指数指标从Elasticsearch。安装在X-pack在Kibana上，您可以查看通过一套专门的仪表板监控数据。&quot;&gt;&lt;a href=&quot;#X-pack监控组件使您可以通过Kibana轻松地监控ElasticSearch。您可以实时查看集群的健康和性能，以及分析过去的集群、索引和节点度量。此外，您可以监视Kibana本身性能。当你安装X-pack在群集上，监控代理运行在每个节点上收集和指数指标从Elasticsearch。安装在X-pack在Kibana上，您可以查看通过一套专门的仪表板监控数据。&quot; class=&quot;headerlink&quot; title=&quot;X-pack监控组件使您可以通过Kibana轻松地监控ElasticSearch。您可以实时查看集群的健康和性能，以及分析过去的集群、索引和节点度量。此外，您可以监视Kibana本身性能。当你安装X-pack在群集上，监控代理运行在每个节点上收集和指数指标从Elasticsearch。安装在X-pack在Kibana上，您可以查看通过一套专门的仪表板监控数据。&quot;&gt;&lt;/a&gt;X-pack监控组件使您可以通过Kibana轻松地监控ElasticSearch。您可以实时查看集群的健康和性能，以及分析过去的集群、索引和节点度量。此外，您可以监视Kibana本身性能。当你安装X-pack在群集上，监控代理运行在每个节点上收集和指数指标从Elasticsearch。安装在X-pack在Kibana上，您可以查看通过一套专门的仪表板监控数据。&lt;/h4&gt;
     
     </summary>
     
