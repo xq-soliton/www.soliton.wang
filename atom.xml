@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.soliton.wang/"/>
-  <updated>2019-02-26T09:56:39.639Z</updated>
+  <updated>2019-02-26T10:01:06.970Z</updated>
   <id>https://www.soliton.wang/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Kibana_Plugins_x-pack</title>
+    <link href="https://www.soliton.wang/2019/02/26/Kibana-Plugins-X-pack/"/>
+    <id>https://www.soliton.wang/2019/02/26/Kibana-Plugins-X-pack/</id>
+    <published>2019-02-26T09:59:49.000Z</published>
+    <updated>2019-02-26T10:01:06.970Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;配置Kibana访问控制,利用X-pack插件进行登录验证。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Kibana_Plugins_x-pack" scheme="https://www.soliton.wang/categories/Kibana-Plugins-x-pack/"/>
+    
+    
+      <category term="Kibana_Plugins_x-pack" scheme="https://www.soliton.wang/tags/Kibana-Plugins-x-pack/"/>
+    
+  </entry>
   
   <entry>
     <title>ElasticSearch_Plugins_x-pack</title>
@@ -489,26 +509,6 @@
   </entry>
   
   <entry>
-    <title>Mysql-5.7.20_install</title>
-    <link href="https://www.soliton.wang/2018/09/19/Service_Mysql-5-7-20_install/"/>
-    <id>https://www.soliton.wang/2018/09/19/Service_Mysql-5-7-20_install/</id>
-    <published>2018-09-19T01:59:00.000Z</published>
-    <updated>2018-11-14T09:11:21.535Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Mysql 5.7.20编译安装教程&lt;br&gt;
-    
-    </summary>
-    
-      <category term="Mysql" scheme="https://www.soliton.wang/categories/Mysql/"/>
-    
-    
-      <category term="Service_Mysql" scheme="https://www.soliton.wang/tags/Service-Mysql/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Oracle_11g_Silence_install</title>
     <link href="https://www.soliton.wang/2018/09/19/Oracle-11g-Silence-install/"/>
     <id>https://www.soliton.wang/2018/09/19/Oracle-11g-Silence-install/</id>
@@ -527,6 +527,26 @@
       <category term="Oracle" scheme="https://www.soliton.wang/tags/Oracle/"/>
     
       <category term="Xmanager5下载" scheme="https://www.soliton.wang/tags/Xmanager5%E4%B8%8B%E8%BD%BD/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Mysql-5.7.20_install</title>
+    <link href="https://www.soliton.wang/2018/09/19/Service_Mysql-5-7-20_install/"/>
+    <id>https://www.soliton.wang/2018/09/19/Service_Mysql-5-7-20_install/</id>
+    <published>2018-09-19T01:59:00.000Z</published>
+    <updated>2018-11-14T09:11:21.535Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Mysql 5.7.20编译安装教程&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Mysql" scheme="https://www.soliton.wang/categories/Mysql/"/>
+    
+    
+      <category term="Service_Mysql" scheme="https://www.soliton.wang/tags/Service-Mysql/"/>
     
   </entry>
   
