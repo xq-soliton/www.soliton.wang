@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.soliton.wang/"/>
-  <updated>2018-12-19T07:59:46.917Z</updated>
+  <updated>2019-02-26T09:52:11.770Z</updated>
   <id>https://www.soliton.wang/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ElasticSearch_Plugins_x-pack</title>
+    <link href="https://www.soliton.wang/2019/02/26/Elasticsearch-Plugins-X-pack/"/>
+    <id>https://www.soliton.wang/2019/02/26/Elasticsearch-Plugins-X-pack/</id>
+    <published>2019-02-26T08:42:00.000Z</published>
+    <updated>2019-02-26T09:52:11.770Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4
+        
+      
+    
+    </summary>
+    
+      <category term="ElasticSearch" scheme="https://www.soliton.wang/categories/ElasticSearch/"/>
+    
+    
+      <category term="Elasticsearch_Plugins" scheme="https://www.soliton.wang/tags/Elasticsearch-Plugins/"/>
+    
+  </entry>
   
   <entry>
     <title>Kibana_Install</title>
@@ -469,6 +495,26 @@
   </entry>
   
   <entry>
+    <title>Mysql-5.7.20_install</title>
+    <link href="https://www.soliton.wang/2018/09/19/Service_Mysql-5-7-20_install/"/>
+    <id>https://www.soliton.wang/2018/09/19/Service_Mysql-5-7-20_install/</id>
+    <published>2018-09-19T01:59:00.000Z</published>
+    <updated>2018-11-14T09:11:21.535Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Mysql 5.7.20编译安装教程&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Mysql" scheme="https://www.soliton.wang/categories/Mysql/"/>
+    
+    
+      <category term="Service_Mysql" scheme="https://www.soliton.wang/tags/Service-Mysql/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Oracle_11g_Silence_install</title>
     <link href="https://www.soliton.wang/2018/09/19/Oracle-11g-Silence-install/"/>
     <id>https://www.soliton.wang/2018/09/19/Oracle-11g-Silence-install/</id>
@@ -487,26 +533,6 @@
       <category term="Oracle" scheme="https://www.soliton.wang/tags/Oracle/"/>
     
       <category term="Xmanager5下载" scheme="https://www.soliton.wang/tags/Xmanager5%E4%B8%8B%E8%BD%BD/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Mysql-5.7.20_install</title>
-    <link href="https://www.soliton.wang/2018/09/19/Service_Mysql-5-7-20_install/"/>
-    <id>https://www.soliton.wang/2018/09/19/Service_Mysql-5-7-20_install/</id>
-    <published>2018-09-19T01:59:00.000Z</published>
-    <updated>2018-11-14T09:11:21.535Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Mysql 5.7.20编译安装教程&lt;br&gt;
-    
-    </summary>
-    
-      <category term="Mysql" scheme="https://www.soliton.wang/categories/Mysql/"/>
-    
-    
-      <category term="Service_Mysql" scheme="https://www.soliton.wang/tags/Service-Mysql/"/>
     
   </entry>
   
@@ -613,15 +639,15 @@
   </entry>
   
   <entry>
-    <title>PHP-install_Parameter description</title>
-    <link href="https://www.soliton.wang/2018/09/04/PHP-install-Parameter-description/"/>
-    <id>https://www.soliton.wang/2018/09/04/PHP-install-Parameter-description/</id>
+    <title>PHP-5.6.37_install</title>
+    <link href="https://www.soliton.wang/2018/09/04/Service_PHP-5-6-37_install/"/>
+    <id>https://www.soliton.wang/2018/09/04/Service_PHP-5-6-37_install/</id>
     <published>2018-09-04T06:43:00.000Z</published>
-    <updated>2018-11-14T09:11:21.533Z</updated>
+    <updated>2018-11-14T09:11:21.535Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;PHP 编译安装参数说明&lt;br&gt;
+      &lt;p&gt;PHP编译安装,方便扩展，优点较多。&lt;/p&gt;
     
     </summary>
     
@@ -633,15 +659,15 @@
   </entry>
   
   <entry>
-    <title>PHP-5.6.37_install</title>
-    <link href="https://www.soliton.wang/2018/09/04/Service_PHP-5-6-37_install/"/>
-    <id>https://www.soliton.wang/2018/09/04/Service_PHP-5-6-37_install/</id>
+    <title>PHP-install_Parameter description</title>
+    <link href="https://www.soliton.wang/2018/09/04/PHP-install-Parameter-description/"/>
+    <id>https://www.soliton.wang/2018/09/04/PHP-install-Parameter-description/</id>
     <published>2018-09-04T06:43:00.000Z</published>
-    <updated>2018-11-14T09:11:21.535Z</updated>
+    <updated>2018-11-14T09:11:21.533Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;PHP编译安装,方便扩展，优点较多。&lt;/p&gt;
+      &lt;p&gt;PHP 编译安装参数说明&lt;br&gt;
     
     </summary>
     
