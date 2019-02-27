@@ -86,13 +86,6 @@
   </url>
   
   <url>
-    <loc>https://www.soliton.wang/2018/09/21/zabbix-monitor-Mysql/</loc>
-    
-    <lastmod>2018-11-14T09:11:21.538Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://www.soliton.wang/2018/09/21/zabbix-monitor-Oracle/</loc>
     
     <lastmod>2018-11-14T09:11:21.538Z</lastmod>
@@ -103,6 +96,20 @@
     <loc>https://www.soliton.wang/2018/09/21/zabbix-wechat-Give-an-alarm/</loc>
     
     <lastmod>2018-11-14T09:11:21.538Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.soliton.wang/2018/09/21/zabbix-monitor-Mysql/</loc>
+    
+    <lastmod>2018-11-14T09:11:21.538Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.soliton.wang/2018/10/09/sphinx-coreseek/</loc>
+    
+    <lastmod>2018-11-14T09:11:21.537Z</lastmod>
     
   </url>
   
@@ -121,13 +128,6 @@
   </url>
   
   <url>
-    <loc>https://www.soliton.wang/2018/10/09/sphinx-coreseek/</loc>
-    
-    <lastmod>2018-11-14T09:11:21.537Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://www.soliton.wang/2018/09/21/zabbix-agentd-install/</loc>
     
     <lastmod>2018-11-14T09:11:21.537Z</lastmod>
@@ -135,14 +135,14 @@
   </url>
   
   <url>
-    <loc>https://www.soliton.wang/2018/09/18/Service_PHP-7-2-1_install/</loc>
+    <loc>https://www.soliton.wang/2018/09/20/Service-ZABBIX-3-4-8-install/</loc>
     
     <lastmod>2018-11-14T09:11:21.536Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://www.soliton.wang/2018/09/20/Service-ZABBIX-3-4-8-install/</loc>
+    <loc>https://www.soliton.wang/2018/09/18/Service_PHP-7-2-1_install/</loc>
     
     <lastmod>2018-11-14T09:11:21.536Z</lastmod>
     
@@ -205,13 +205,6 @@
   </url>
   
   <url>
-    <loc>https://www.soliton.wang/2018/09/04/PHP-install-Parameter-description/</loc>
-    
-    <lastmod>2018-11-14T09:11:21.533Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://www.soliton.wang/2018/09/20/Oracle-11g-install-Graphing/</loc>
     
     <lastmod>2018-11-14T09:11:21.533Z</lastmod>
@@ -220,6 +213,13 @@
   
   <url>
     <loc>https://www.soliton.wang/2018/09/04/PHP-install-Parameter-dependence/</loc>
+    
+    <lastmod>2018-11-14T09:11:21.533Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.soliton.wang/2018/09/04/PHP-install-Parameter-description/</loc>
     
     <lastmod>2018-11-14T09:11:21.533Z</lastmod>
     
@@ -240,14 +240,14 @@
   </url>
   
   <url>
-    <loc>https://www.soliton.wang/2018/09/01/Nginx-conf/</loc>
+    <loc>https://www.soliton.wang/2018/10/17/centos-install-vsftpd/</loc>
     
     <lastmod>2018-11-14T09:11:21.532Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://www.soliton.wang/2018/10/17/centos-install-vsftpd/</loc>
+    <loc>https://www.soliton.wang/2018/09/01/Nginx-conf/</loc>
     
     <lastmod>2018-11-14T09:11:21.532Z</lastmod>
     
